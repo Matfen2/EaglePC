@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: block;
+  margin: auto;
+}
+
+.navbar {
+    position: absolute;
+    top: 7%;
+    left: 1%;
+    transform: translate(-2%, -50%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+   column-gap: 400px;
+}
+
+.navbar-brand .img-fluid {
+    height: 140px;
+    max-width: 350px;
+    margin-left: 10px;
+    transition: all 0.25ms ease;
+}
+
+.navbar-brand .img-fluid:hover {
+   transform: scale(0.9);
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+}
+
+.hrefEagle {
+    font-size: 1.3em;
+    margin-right: 60px;
+    margin-left: 60px;
+    font-family: nulshock;
+}
+
+.navbar-nav a {
+  color: azure;
+  text-decoration: none;
+}
+
+.navbar-nav a:hover {
+  opacity: 0.8;
+}
+
+#btnLogIn {
+    color: azure;
+    padding: 3px;
+    width: 160px;
+    font-size: 1.4em;
+    margin-right: 10px;
+    background: transparent;
+    border: 1px solid azure;
+}
+
+#btnLogIn:hover {
+  color: black;
+  background-color: azure;
+}
+
+@font-face {
+    font-family: nulshock;
+    src: url('../src/fonts/nulshock\ bd.otf');
+}
