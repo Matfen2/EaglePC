@@ -57,8 +57,10 @@ export default function App() {
             </div>
           </div>
         </SwiperSlide>
-        <SwiperSlide className="secondShow"></SwiperSlide>
-        <SwiperSlide className="thirdShow"></SwiperSlide>
+        <SwiperSlide className="secondShow">
+        </SwiperSlide>
+        <SwiperSlide className="thirdShow">
+        </SwiperSlide>
       </Swiper>
     </>
   );
