@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: block;
+    margin: auto;
+}
+
+// ROOT & MIXIN
+$firstColor : azure;
+
+@mixin flex ($flexDirection) {
+    display: flex;
+    flex-direction: row;
+}
+
+// NAV
+.navbar {
+    margin-top: -20px;
+    align-items: center;
+    justify-content: space-between;
+    .navbar-brand {
+        .img-fluid {
+            height: 150px;
+            max-width: 250px;
+            margin-left: -30px;
+            transition: all 0.25ms ease;
+            &:hover {
+                transform: scale(0.8);
+            }
+        }
+    }
+    #btnBars {
+        font-size: 1.8em;
+        margin-right: 10px;
+        color: $firstColor;
+        border: transparent;
+        background: transparent;
+        transition: all 0.25ms ease;
+        &:hover {
+            transform: rotate(90deg);
+        }
+    }
+}
+
+.offcanvas-top {
+    visibility: hidden;
+    height: 200px;
+    @include flex (row);
+    align-items: center;
+    justify-content: space-between;
+    .offcanvas-header {
+        .img-fluid {
+            height: 150px;
+            max-width: 250px;
+        }
+    }
+    .offcanvas-body {
+        .navbar-nav {
+            @include flex (row);
+            align-items: center;
+            justify-content: center;
+            column-gap: 260px;
+        }
+    }
+}
+
+// SHOW 
+@media screen and (max-width: 992px) {
+    Swiper {
+        .firstShow {
+            #two {
+                margin-top: -50px;
+                margin-left: 80px;
+            }
+        }
+    }
+}

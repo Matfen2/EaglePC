@@ -1,63 +1,24 @@
 .swiper {
   width: 100%;
-  height: 870px;
+  height: 100vh;
 }
 
 .firstShow {
-    width: 100%;
     background-size: cover;
     background-position: center;
-    background-image: url('../data/ShowFirst.png');
+    background-image: url('../data/nvidiaBackground.jpeg');
 }
 
 .secondShow {
     background-size: cover;
     background-position: center;
-    background-image: url('../data/ShowSecond.png');
+    background-image: url('../data/tronBackground.jpeg');
 }
 
 .thirdShow {
   background-size: cover;
   background-position: center;
-  background-image: url('../data/showThird.png');
-}
-
-.listLogiciels {
-  justify-content: center;
-  margin-top: 330px;
-  display: flex;
-  flex-direction: row;
-  column-gap: 130px;
-}
-
-.listLogiciels .img-fluid {
-  height: 130px;
-  max-width: 370px;
-  transition: all 0.25ms ease;
-}
-
-.listLogiciels .img-fluid:hover {
-  transform: scale(0.8);
-}
-
-#btnHelp {
-  position: absolute;
-  top: 91%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  padding: 5px;
-  color: azure;
-  font-size: 1.4em;
-  border-radius: 40px;
-  font-family: nulshock;
-  background: transparent;
-  border: 1px solid white;
-}
-
-#btnHelp:hover {
-  color: black;
-  background-color: azure;
+  background-image: url('../data/redPcGamer.jpeg');
 }
 
 @font-face {
