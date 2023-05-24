@@ -1,21 +1,66 @@
 .swiper {
   width: 100%;
-  height: 950px;
-}
-
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-
-  /* Center slide text vertically */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 870px;
 }
 
 .firstShow {
+    width: 100%;
     background-size: cover;
     background-position: center;
     background-image: url('../data/ShowFirst.png');
+}
+
+.secondShow {
+    background-size: cover;
+    background-position: center;
+    background-image: url('../data/ShowSecond.png');
+}
+
+.thirdShow {
+  background-size: cover;
+  background-position: center;
+  background-image: url('../data/showThird.png');
+}
+
+.listLogiciels {
+  justify-content: center;
+  margin-top: 330px;
+  display: flex;
+  flex-direction: row;
+  column-gap: 130px;
+}
+
+.listLogiciels .img-fluid {
+  height: 130px;
+  max-width: 370px;
+  transition: all 0.25ms ease;
+}
+
+.listLogiciels .img-fluid:hover {
+  transform: scale(0.8);
+}
+
+#btnHelp {
+  position: absolute;
+  top: 91%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 5px;
+  color: azure;
+  font-size: 1.4em;
+  border-radius: 40px;
+  font-family: nulshock;
+  background: transparent;
+  border: 1px solid white;
+}
+
+#btnHelp:hover {
+  color: black;
+  background-color: azure;
+}
+
+@font-face {
+  font-family: nulshock;
+  src: url('../fonts/nulshock\ bd.otf');
 }

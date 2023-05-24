@@ -1,5 +1,8 @@
 import React from "react";
-import eaglePcLogo from "../data/EaglePCLogo.png"
+import Nav from './Nav';
+import firstLogiciels from '../data/heavenBenchmarkLogo.png'
+import secondLogiciels from '../data/msiAfterburnnerLogo.jpeg'
+import thirdLogiciels from '../data/quickCpuLogo.jpeg'
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -29,37 +32,39 @@ export default function App() {
         className="mySwiper"
       >
         <SwiperSlide className="firstShow">
-          <div>
-            <div className="navbar navbar-expand-lg">
-              <div className="navbar-brand">
-                <a href="/public/index.html">
-                  <img
-                    src={eaglePcLogo}
-                    className="img-fluid w-100"
-                    alt="eaglePCLogo"
-                  />
-                </a>
-              </div>
-              <div className="navbar-nav">
-                <li className="hrefEagle">
-                  <a href="./Benchmark.html">Benchmark</a>
-                </li>
-                <li className="hrefEagle">
-                  <a href="./Games.html">Jeux</a>
-                </li>
-                <li className="hrefEagle">
-                  <a href="./Drivers.html">Drivers</a>
-                </li>
-              </div>
-              <button type="button" id="btnLogIn">
-                LOG IN
-              </button>
-            </div>
-          </div>
+          <Nav />
         </SwiperSlide>
         <SwiperSlide className="secondShow">
+          <Nav />
+          <button type="button" id="btnHelp">
+            BESOIN D'AIDE
+          </button>
         </SwiperSlide>
         <SwiperSlide className="thirdShow">
+          <Nav />
+          <div className="listLogiciels">
+            <a href="https://benchmark.unigine.com/heaven">
+              <img
+                src={firstLogiciels}
+                className="img-fluid w-100"
+                alt="heavenBenchmarkLogo"
+              />
+            </a>
+            <a href="https://www.msi.com/Landing/afterburner/graphics-cards">
+              <img
+                src={secondLogiciels}
+                className="img-fluid w-100"
+                alt="msiAfterburnnnerLogo"
+              />
+            </a>
+            <a href="https://quickcpu.net">
+              <img
+                src={thirdLogiciels}
+                className="img-fluid w-100"
+                alt="quickCpuLogo"
+              />
+            </a>
+          </div>
         </SwiperSlide>
       </Swiper>
     </>
