@@ -1,10 +1,10 @@
-import React from 'react'
+import React from "react";
 import eaglePcLogo from "../data/EaglePCLogo.png";
 
-export default function Nav() {
+export default function Navbar() {
   return (
-    <div>
-      <div className="navbar navbar-expand-lg">
+    <div className="presentSite">
+      <nav className="navbar navbar-expand-lg">
         <div className="navbar-brand">
           <a href="/public/index.html">
             <img
@@ -22,36 +22,7 @@ export default function Nav() {
         >
           <i class="fas fa-bars"></i>
         </button>
-      </div>
-      <div className="offcanvas-top" id="showCanvas" tabindex="-1">
-        <div className="offcanvas-header">
-          <a href="/public/index.html">
-            <img
-              src={eaglePcLogo}
-              className="img-fluid w-100"
-              alt="eaglePCLogo"
-            />
-          </a>
-        </div>
-        <div className="offcanvas-body">
-          <div className="navbar-nav">
-            <li>
-              <a href="Benchmark">BENCHMARK</a>
-            </li>
-            <li>
-              <a href="Jeux">JEUX</a>
-            </li>
-            <li>
-              <a href="Drivers">DRIVERS</a>
-            </li>
-          </div>
-        </div>
-        <div className="offcanvas-footer">
-          <button type="button" id="btnLogIn">
-            LOG IN
-          </button>
-        </div>
-      </div>
+      </nav>
     </div>
   );
 }

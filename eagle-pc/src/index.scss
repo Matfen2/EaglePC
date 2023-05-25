@@ -9,6 +9,9 @@ body {
 
 // ROOT & MIXIN
 $firstColor : azure;
+$secondColor : black;
+$thirdColor : darkred;
+
 
 @mixin flex ($flexDirection) {
     display: flex;
@@ -16,64 +19,116 @@ $firstColor : azure;
 }
 
 // NAV
-.navbar {
-    margin-top: -20px;
+.presentSite {
+    .navbar {
+        margin-top: -20px;
+        align-items: center;
+        justify-content: space-between;
+        .navbar-brand {
+            .img-fluid {
+                height: 150px;
+                max-width: 250px;
+                margin-left: -30px;
+                transition: all 0.25ms ease;
+                &:hover {
+                    transform: scale(0.8);
+                }
+            }
+        }
+        #btnBars {
+            font-size: 1.8em;
+            margin-right: 10px;
+            color: $firstColor;
+            border: transparent;
+            background: transparent;
+            transition: all 0.25ms ease;
+            &:hover {
+                transform: rotate(90deg);
+            }
+        }
+    }
+}
+
+// SHOW 
+
+
+
+// OFFERS
+.offers {
+    height: 300px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('./data/offersBackground.jpg');
+}
+
+// OFFCANVAS 
+#showCanvas {
+    height: 130px;
+    @include flex (row);
     align-items: center;
     justify-content: space-between;
-    .navbar-brand {
+    background-color: $secondColor;
+    .offcanvas-header {
         .img-fluid {
-            height: 150px;
-            max-width: 250px;
-            margin-left: -30px;
+            height: 130px;
+            max-width: 200px;
             transition: all 0.25ms ease;
             &:hover {
                 transform: scale(0.8);
             }
         }
     }
-    #btnBars {
-        font-size: 1.8em;
-        margin-right: 10px;
-        color: $firstColor;
-        border: transparent;
-        background: transparent;
-        transition: all 0.25ms ease;
-        &:hover {
-            transform: rotate(90deg);
-        }
-    }
-}
-
-.offcanvas-top {
-    visibility: hidden;
-    height: 200px;
-    @include flex (row);
-    align-items: center;
-    justify-content: space-between;
-    .offcanvas-header {
-        .img-fluid {
-            height: 150px;
-            max-width: 250px;
-        }
-    }
     .offcanvas-body {
         .navbar-nav {
-            @include flex (row);
+            column-gap: 20%;
             align-items: center;
+            @include flex (row);
             justify-content: center;
-            column-gap: 260px;
-        }
-    }
-}
-
-// SHOW 
-@media screen and (max-width: 992px) {
-    Swiper {
-        .firstShow {
-            #two {
-                margin-top: -50px;
-                margin-left: 80px;
+            .nav-item {
+                .nav-link {
+                    font-size: 1.4em;
+                    color: $firstColor;
+                    font-family: nulshock;
+                    &:hover {
+                        opacity: 0.8;
+                    }
+                }
             }
         }
     }
+    .offcanvas-footer {
+        #btnLogIn {
+            font-size: 1.5em;
+            color: $firstColor;
+            margin-right: 60px;
+            font-family: nulshock;
+            background-color: transparent;
+            border: 1px solid $firstColor;
+            &:hover {
+                color: $secondColor;
+                background-color: $firstColor;
+            }
+        }
+    }
+    #btnCloseCanvas {
+        position: absolute;
+        top: 2%;
+        right: 0%;
+        color: $thirdColor;
+        font-size: 1.4em;
+        border: transparent;
+        background: transparent;
+        &:hover {
+            color: $firstColor;
+        }
+    }
+}
+
+// MEDIA QUERRY
+
+// FONTS
+@font-face {
+    font-family: nulshock;
+    src: url('./fonts/nulshock\ bd.otf');
 }

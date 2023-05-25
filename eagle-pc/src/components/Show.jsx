@@ -1,7 +1,6 @@
 import React from "react";
 import Nav from './Nav';
-import showFirstOne from '../data/ShowFirstPartOne.png'
-import showFirstTwo from "../data/ShowFirstPartTwo.png";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -32,40 +31,16 @@ export default function App() {
       >
         <SwiperSlide className="firstShow">
           <Nav />
-          <div className="row firstPict" style={{ marginTop: "-150px" }}>
-            <div className="col-lg-6">
-              <img
-                src={showFirstOne}
-                alt="pictShowFirst"
-                className="img-fluid w-100 one"
-                style={{
-                  marginTop: "-10%",
-                  marginLeft: "15%",
-                  height: "600px",
-                  maxWidth: "600px"
-                }}
-              />
-            </div>
-            <div className="col-lg-6">
-              <img
-                src={showFirstTwo}
-                alt="pictShowFirst"
-                className="img-fluid w-100"
-                id="two"
-                style={{
-                  marginTop: "-150px",
-                  marginLeft: "160px",
-                  height: "600px",
-                }}
-              />
-            </div>
-          </div>
         </SwiperSlide>
         <SwiperSlide className="secondShow">
           <Nav />
         </SwiperSlide>
         <SwiperSlide className="thirdShow">
           <Nav />
+          <h2 className="downloadLogiciels">
+            Télécharger ces logiciels pour tester et comparer vos composants
+            avec d'autres :
+          </h2>
         </SwiperSlide>
       </Swiper>
     </>

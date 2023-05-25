@@ -7,21 +7,21 @@ body {
   margin: auto;
 }
 
-.navbar {
+.presentSite .navbar {
   margin-top: -20px;
   align-items: center;
   justify-content: space-between;
 }
-.navbar .navbar-brand .img-fluid {
+.presentSite .navbar .navbar-brand .img-fluid {
   height: 150px;
   max-width: 250px;
   margin-left: -30px;
   transition: all 0.25ms ease;
 }
-.navbar .navbar-brand .img-fluid:hover {
+.presentSite .navbar .navbar-brand .img-fluid:hover {
   transform: scale(0.8);
 }
-.navbar #btnBars {
+.presentSite .navbar #btnBars {
   font-size: 1.8em;
   margin-right: 10px;
   color: azure;
@@ -29,34 +29,76 @@ body {
   background: transparent;
   transition: all 0.25ms ease;
 }
-.navbar #btnBars:hover {
+.presentSite .navbar #btnBars:hover {
   transform: rotate(90deg);
 }
 
-.offcanvas-top {
-  visibility: hidden;
-  height: 200px;
+.offers {
+  height: 300px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("./data/offersBackground.jpg");
+}
+
+#showCanvas {
+  height: 130px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  background-color: black;
 }
-.offcanvas-top .offcanvas-header .img-fluid {
-  height: 150px;
-  max-width: 250px;
+#showCanvas .offcanvas-header .img-fluid {
+  height: 130px;
+  max-width: 200px;
+  transition: all 0.25ms ease;
 }
-.offcanvas-top .offcanvas-body .navbar-nav {
+#showCanvas .offcanvas-header .img-fluid:hover {
+  transform: scale(0.8);
+}
+#showCanvas .offcanvas-body .navbar-nav {
+  -moz-column-gap: 20%;
+       column-gap: 20%;
+  align-items: center;
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: center;
-  -moz-column-gap: 260px;
-       column-gap: 260px;
+}
+#showCanvas .offcanvas-body .navbar-nav .nav-item .nav-link {
+  font-size: 1.4em;
+  color: azure;
+  font-family: nulshock;
+}
+#showCanvas .offcanvas-body .navbar-nav .nav-item .nav-link:hover {
+  opacity: 0.8;
+}
+#showCanvas .offcanvas-footer #btnLogIn {
+  font-size: 1.5em;
+  color: azure;
+  margin-right: 60px;
+  font-family: nulshock;
+  background-color: transparent;
+  border: 1px solid azure;
+}
+#showCanvas .offcanvas-footer #btnLogIn:hover {
+  color: black;
+  background-color: azure;
+}
+#showCanvas #btnCloseCanvas {
+  position: absolute;
+  top: 2%;
+  right: 0%;
+  color: darkred;
+  font-size: 1.4em;
+  border: transparent;
+  background: transparent;
+}
+#showCanvas #btnCloseCanvas:hover {
+  color: azure;
 }
 
-@media screen and (max-width: 992px) {
-  Swiper .firstShow #two {
-    margin-top: -50px;
-    margin-left: 80px;
-  }
+@font-face {
+  font-family: nulshock;
+  src: url("./fonts/nulshock bd.otf");
 }/*# sourceMappingURL=index.css.map */
