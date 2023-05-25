@@ -15,7 +15,7 @@ $thirdColor : darkred;
 
 @mixin flex ($flexDirection) {
     display: flex;
-    flex-direction: row;
+    flex-direction: $flexDirection;
 }
 
 // NAV
@@ -50,52 +50,156 @@ $thirdColor : darkred;
 }
 
 // SHOW 
-Swiper {
-    .thirdShow {
-        .downloadLogiciels {
+.firstShow {
+  .listFree {
+    .row {
+        .col-lg-6 {
+            #firstOne {
+                height: 560px;
+                max-width: 1250px;
+            }
+            #firstTwo {
+                margin-top: -160px;
+                margin-left: 100px;
+                height: 660px;
+            }
+        }
+    }
+    #btnBuyCard {
+        display: block;
+        margin: 120px auto;
+        padding: 5px;
+        width: 130px;
+        cursor: pointer;
+        color: $firstColor;
+        font-family: nulshock;
+        border-radius: 40px;
+        background: transparent;
+        border: 1px solid $firstColor;
+        &:hover {
+            color: rgb(20, 187, 20);
+            background-color: rgb(54, 54, 54);
+        }
+    }
+  }  
+}
+
+.secondShow {
+    .team {
+        margin-top: -50px;
+        font-size: 4.8em;
+        text-align: center;
+        color: $firstColor;
+        font-family: TronBoldInline;
+    }
+    .overUnder {
+        .img-fluid {
+            height: 540px;
+            margin-bottom: -350px;
+        }
+    }
+    p {
+        text-align: center;
+        margin-top: 350px;
+        font-size: 1.6em;
+        font-family: nulshock;
+        color: $firstColor;
+    }
+    #btnAstuces {
+        display: block;
+        margin: auto;
+        border-radius: 40px;
+        font-family: nulshock;
+        background: rgb(8, 146, 180);
+        border: 1px solid $firstColor;
+        a {
+            font-size: 1.4em;
             color: $firstColor;
+            text-decoration: none;
+        }
+        &:hover {
+            background-color: rgb(221, 152, 4);
         }
     }
 }
 
+.thirdShow {
+    .sentenceSoftwares {
+        margin: 30px auto;
+    }
+    .downloadSoftwareOne {
+        width: 100%;
+        display: block;
+        margin: auto;
+        max-width: 1200px;
+        font-family: nulshock;
+    }
+    .listSoftware {
+        margin: 80px auto;
+        .row {
+            column-gap: 200px;
+            text-align: center;
+            justify-content: center;
+            .col-lg-3 {
+                width: 150px;
+                height: 150px;
+                cursor: pointer;
+                .img-fluid {
+                    transition: all 0.25ms ease;
+                    &:hover {
+                        transform: scale(1.2);
+                    }
+                }
+            }
+        }
+    }
+}
 
 // OFFERS
-.offers {
-    height: 300px;
-    background-size: contain;
+.Offers {
+    height: 400px;
+    background-size: auto;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url('./data/offersBackground.jpg');
+    background-image: url('./data/offersBackground.png');
+    #btnOffers {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 5px;
+        font-size: 2.5em;
+        background: transparent;
+        border: 2px solid $firstColor;
+    }
 }
 
 // OFFCANVAS 
 #showCanvas {
-    height: 130px;
-    @include flex (row);
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    width: 100%;
+    max-width: 340px;
+    height: 250px;
+    @include flex (column);
     align-items: center;
+    border: 1px solid $firstColor;
+    border-radius: 0px 0px 0px 40px;
     justify-content: space-between;
     background-color: $secondColor;
-    .offcanvas-header {
-        .img-fluid {
-            height: 130px;
-            max-width: 200px;
-            transition: all 0.25ms ease;
-            &:hover {
-                transform: scale(0.8);
-            }
-        }
-    }
     .offcanvas-body {
-        .navbar-nav {
-            column-gap: 20%;
-            align-items: center;
-            @include flex (row);
-            justify-content: center;
-            .nav-item {
-                .nav-link {
-                    font-size: 1.4em;
+        .listCanvas {
+            line-height: 45px;
+            text-align: center;
+            list-style-type: none;
+            li {
+                a {
+                    letter-spacing: 3px;
+                    font-size: 1.6em;
                     color: $firstColor;
                     font-family: nulshock;
+                    text-decoration: none;
                     &:hover {
                         opacity: 0.8;
                     }
@@ -105,9 +209,10 @@ Swiper {
     }
     .offcanvas-footer {
         #btnLogIn {
+            letter-spacing: 3px;
             font-size: 1.5em;
             color: $firstColor;
-            margin-right: 60px;
+            margin-bottom: 30px;
             font-family: nulshock;
             background-color: transparent;
             border: 1px solid $firstColor;
@@ -120,9 +225,9 @@ Swiper {
     #btnCloseCanvas {
         position: absolute;
         top: 2%;
-        right: 0%;
+        right: 1%;
         color: $thirdColor;
-        font-size: 1.4em;
+        font-size: 1.8em;
         border: transparent;
         background: transparent;
         &:hover {
@@ -132,8 +237,100 @@ Swiper {
 }
 
 // MEDIA QUERRY
+@media screen and (max-width: 982px) {
+    .secondShow {
+        .team {
+            font-size: 4.2em;
+        }
+    
+        p {
+            text-align: center;
+            margin-top: 350px;
+            font-size: 1.4em;
+            font-family: nulshock;
+            color: $firstColor;
+        }   
+    }
+}
+
+@media screen and (max-width: 836px) {
+    #btnLogIn {
+        width: 120px;
+        margin-right: 80px;
+    }
+
+    #showCanvas {
+        height: 300px;
+        max-width: 250px;
+        .offcanvas-body {
+            .listCanvas {
+                line-height: 60px;
+            }
+        }
+        .offcanvas-footer {
+            #btnLogIn {
+                margin-left: 70px;
+                width: 160px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .firstShow {
+        .listFree {
+            .row {
+                .col-lg-6 {
+                    #firstOne {
+                        margin-left: -20px;
+                        margin-top: -30px;
+                        height: 260px;
+
+                    }
+                    #firstTwo {
+                        margin-top: -20px;
+                        margin-left: 0px;
+                        height: 420px;
+                    }
+                }
+            }
+        }  
+    }
+}
+
+@media screen and (max-width: 715px) {
+    .secondShow {
+        .team {
+            margin-top: -4px;
+        }
+        .overUnder {
+            .img-fluid {
+                height: 420px;
+                margin-bottom: -350px;
+            }
+        }
+        p {
+            margin-top: 360px;
+        }
+    }
+}
+
+@media screen and (max-width: 455px) {
+    .secondShow {
+        .team {
+            margin-top: -2px;
+           font-size: 4.0em;
+        }
+        
+    }
+}
 
 // FONTS
+@font-face {
+    font-family: TronBoldInline;
+    src: url('./fonts/TronBoldInline.otf');
+}
+
 @font-face {
     font-family: nulshock;
     src: url('./fonts/nulshock\ bd.otf');

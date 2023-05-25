@@ -33,54 +33,151 @@ body {
   transform: rotate(90deg);
 }
 
-Swiper .thirdShow .downloadLogiciels {
+.firstShow .listFree .row .col-lg-6 #firstOne {
+  height: 560px;
+  max-width: 1250px;
+}
+.firstShow .listFree .row .col-lg-6 #firstTwo {
+  margin-top: -160px;
+  margin-left: 100px;
+  height: 660px;
+}
+.firstShow .listFree #btnBuyCard {
+  display: block;
+  margin: 120px auto;
+  padding: 5px;
+  width: 130px;
+  cursor: pointer;
   color: azure;
+  font-family: nulshock;
+  border-radius: 40px;
+  background: transparent;
+  border: 1px solid azure;
+}
+.firstShow .listFree #btnBuyCard:hover {
+  color: rgb(20, 187, 20);
+  background-color: rgb(54, 54, 54);
 }
 
-.offers {
-  height: 300px;
-  background-size: contain;
+.secondShow .team {
+  margin-top: -50px;
+  font-size: 4.8em;
+  text-align: center;
+  color: azure;
+  font-family: TronBoldInline;
+}
+.secondShow .overUnder .img-fluid {
+  height: 540px;
+  margin-bottom: -350px;
+}
+.secondShow p {
+  text-align: center;
+  margin-top: 350px;
+  font-size: 1.6em;
+  font-family: nulshock;
+  color: azure;
+}
+.secondShow #btnAstuces {
+  display: block;
+  margin: auto;
+  border-radius: 40px;
+  font-family: nulshock;
+  background: rgb(8, 146, 180);
+  border: 1px solid azure;
+}
+.secondShow #btnAstuces a {
+  font-size: 1.4em;
+  color: azure;
+  text-decoration: none;
+}
+.secondShow #btnAstuces:hover {
+  background-color: rgb(221, 152, 4);
+}
+
+.thirdShow .sentenceSoftwares {
+  margin: 30px auto;
+}
+.thirdShow .downloadSoftwareOne {
+  width: 100%;
+  display: block;
+  margin: auto;
+  max-width: 1200px;
+  font-family: nulshock;
+}
+.thirdShow .listSoftware {
+  margin: 80px auto;
+}
+.thirdShow .listSoftware .row {
+  -moz-column-gap: 200px;
+       column-gap: 200px;
+  text-align: center;
+  justify-content: center;
+}
+.thirdShow .listSoftware .row .col-lg-3 {
+  width: 150px;
+  height: 150px;
+  cursor: pointer;
+}
+.thirdShow .listSoftware .row .col-lg-3 .img-fluid {
+  transition: all 0.25ms ease;
+}
+.thirdShow .listSoftware .row .col-lg-3 .img-fluid:hover {
+  transform: scale(1.2);
+}
+
+.Offers {
+  height: 400px;
+  background-size: auto;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url("./data/offersBackground.jpg");
+  background-image: url("./data/offersBackground.png");
+}
+.Offers #btnOffers {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 5px;
+  font-size: 2.5em;
+  background: transparent;
+  border: 2px solid azure;
 }
 
 #showCanvas {
-  height: 130px;
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  width: 100%;
+  max-width: 340px;
+  height: 250px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
+  border: 1px solid azure;
+  border-radius: 0px 0px 0px 40px;
   justify-content: space-between;
   background-color: black;
 }
-#showCanvas .offcanvas-header .img-fluid {
-  height: 130px;
-  max-width: 200px;
-  transition: all 0.25ms ease;
+#showCanvas .offcanvas-body .listCanvas {
+  line-height: 45px;
+  text-align: center;
+  list-style-type: none;
 }
-#showCanvas .offcanvas-header .img-fluid:hover {
-  transform: scale(0.8);
-}
-#showCanvas .offcanvas-body .navbar-nav {
-  -moz-column-gap: 20%;
-       column-gap: 20%;
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-#showCanvas .offcanvas-body .navbar-nav .nav-item .nav-link {
-  font-size: 1.4em;
+#showCanvas .offcanvas-body .listCanvas li a {
+  letter-spacing: 3px;
+  font-size: 1.6em;
   color: azure;
   font-family: nulshock;
+  text-decoration: none;
 }
-#showCanvas .offcanvas-body .navbar-nav .nav-item .nav-link:hover {
+#showCanvas .offcanvas-body .listCanvas li a:hover {
   opacity: 0.8;
 }
 #showCanvas .offcanvas-footer #btnLogIn {
+  letter-spacing: 3px;
   font-size: 1.5em;
   color: azure;
-  margin-right: 60px;
+  margin-bottom: 30px;
   font-family: nulshock;
   background-color: transparent;
   border: 1px solid azure;
@@ -92,9 +189,9 @@ Swiper .thirdShow .downloadLogiciels {
 #showCanvas #btnCloseCanvas {
   position: absolute;
   top: 2%;
-  right: 0%;
+  right: 1%;
   color: darkred;
-  font-size: 1.4em;
+  font-size: 1.8em;
   border: transparent;
   background: transparent;
 }
@@ -102,6 +199,69 @@ Swiper .thirdShow .downloadLogiciels {
   color: azure;
 }
 
+@media screen and (max-width: 982px) {
+  .secondShow .team {
+    font-size: 4.2em;
+  }
+  .secondShow p {
+    text-align: center;
+    margin-top: 350px;
+    font-size: 1.4em;
+    font-family: nulshock;
+    color: azure;
+  }
+}
+@media screen and (max-width: 836px) {
+  #btnLogIn {
+    width: 120px;
+    margin-right: 80px;
+  }
+  #showCanvas {
+    height: 300px;
+    max-width: 250px;
+  }
+  #showCanvas .offcanvas-body .listCanvas {
+    line-height: 60px;
+  }
+  #showCanvas .offcanvas-footer #btnLogIn {
+    margin-left: 70px;
+    width: 160px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .firstShow .listFree .row .col-lg-6 #firstOne {
+    margin-left: -20px;
+    margin-top: -30px;
+    height: 260px;
+  }
+  .firstShow .listFree .row .col-lg-6 #firstTwo {
+    margin-top: -20px;
+    margin-left: 0px;
+    height: 420px;
+  }
+}
+@media screen and (max-width: 715px) {
+  .secondShow .team {
+    margin-top: -4px;
+  }
+  .secondShow .overUnder .img-fluid {
+    height: 420px;
+    margin-bottom: -350px;
+  }
+  .secondShow p {
+    margin-top: 360px;
+  }
+}
+@media screen and (max-width: 455px) {
+  .secondShow .team {
+    margin-top: -2px;
+    font-size: 4em;
+  }
+}
+@font-face {
+  font-family: TronBoldInline;
+  src: url("./fonts/TronBoldInline.otf");
+}
 @font-face {
   font-family: nulshock;
   src: url("./fonts/nulshock bd.otf");

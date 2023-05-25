@@ -1,5 +1,8 @@
 import React from "react";
 import Nav from './Nav';
+import showFirstOne from '../data/ShowFirstPartOne.png'
+import showFirstTwo from "../data/ShowFirstPartTwo.png";
+import overUnder from '../data/ShowSecond.png'
 import firstSoftware from '../data/heavenBenchmarkLogo.png';
 import secondSoftware from '../data/msiAfterburnnerLogo.jpeg'
 import thirdSoftware from '../data/quickCpuLogo.jpeg'
@@ -35,115 +38,79 @@ export default function App() {
       >
         <SwiperSlide className="firstShow">
           <Nav />
+          <div className="listFree">
+            <div className="row">
+              <div className="col-lg-6 col-md-6">
+                  <img
+                    src={showFirstOne}
+                    className="img-fluid w-100"
+                    id="firstOne"
+                    alt="showFirstOne"
+                  />
+              </div>
+              <div className="col-lg-6 col-md-6">
+                <img
+                  src={showFirstTwo}
+                  className="img-fluid w-100"
+                  id="firstTwo"
+                  alt="showFirstTwo"
+                />
+              </div>
+            </div>
+            <button type="button" id="btnBuyCard">ACHETER</button>
+          </div>
         </SwiperSlide>
         <SwiperSlide className="secondShow">
           <Nav />
+          <h2 className="team">ETES-VOUS LA TEAM ?</h2>
+          <span className="overUnder">
+            <img src={overUnder} className="img-fluid w-100" alt="overUnder" />
+          </span>
+          <p>d'autres conseils pour améliorer votre confort de votre pc</p>
+          <button type="button" id="btnAstuces">
+            <a href=".help">BESOIN DE CONSEILS</a>
+          </button>
         </SwiperSlide>
         <SwiperSlide className="thirdShow">
           <Nav />
-          <div className="sentenceDownload" style={{margin: '30px auto'}}>
-            <h2
-              className="downloadSoftwareOne"
-              style={{
-                color: "azure",
-                fontFamily: "nulshock",
-                textAlign: "center",
-              }}
-            >
-              Télécharger ces logiciels pour tester et
-            </h2>
-            <h2
-              className="downloadSoftwareTwo"
-              style={{
-                color: "azure",
-                fontFamily: "nulshock",
-                textAlign: "center",
-              }}
-            >
-              comparer vos composants avec d'autres :
+          <div className="sentenceDownload" style={{ margin: "30px auto" }}>
+            <h2 className="downloadSoftwareOne">
+              Télécharger ces logiciels pour tester et comparer vos composants
+              avec d'autres :
             </h2>
           </div>
           <div className="listSoftware" style={{ margin: "80px auto" }}>
-            <div
-              className="row"
-              style={{
-                textAlign: "center",
-                justifyContent: "center",
-                columnGap: "200px",
-              }}
-            >
-              <div
-                className="col-lg-3 col-md-6 col-sm-6"
-                style={{ width: "150px" }}
-              >
+            <div className="row">
+              <div className="col-lg-3 col-md-6 col-sm-6">
                 <img
                   src={firstSoftware}
                   className="img-fluid w-100"
                   alt="heavenBenchmarkLogo"
-                  style={{
-                    height: "200px",
-                    maxWidth: "220px",
-                    cursor: "pointer",
-                  }}
                 />
               </div>
-              <div
-                className="col-lg-3 col-md-6 col-sm-6"
-                style={{ width: "150px" }}
-              >
+              <div className="col-lg-3 col-md-6 col-sm-6">
                 <img
                   src={secondSoftware}
                   className="img-fluid w-100"
                   alt="heavenBenchmarkLogo"
-                  style={{
-                    height: "200px",
-                    maxWidth: "220px",
-                    cursor: "pointer",
-                  }}
                 />
               </div>
-              <div
-                className="col-lg-3 col-md-6 col-sm-6"
-                style={{ width: "150px" }}
-              >
+              <div className="col-lg-3 col-md-6 col-sm-6">
                 <img
                   src={thirdSoftware}
                   className="img-fluid w-100"
                   alt="heavenBenchmarkLogo"
-                  style={{
-                    height: "200px",
-                    maxWidth: "220px",
-                    cursor: "pointer",
-                  }}
                 />
               </div>
-              <div
-                className="col-lg-3 col-md-6 col-sm-6"
-                style={{ width: "150px" }}
-              >
+              <div className="col-lg-3 col-md-6 col-sm-6">
                 <img
                   src={fourSoftware}
                   className="img-fluid w-100"
                   alt="heavenBenchmarkLogo"
-                  style={{
-                    height: "200px",
-                    maxWidth: "220px",
-                    cursor: "pointer",
-                  }}
                 />
               </div>
             </div>
           </div>
-          <h3
-            style={{
-              color: "azure",
-              fontFamily: "nulshock",
-              textAlign: "center",
-              margin: "100px auto",
-            }}
-          >
-            et bien d'autres
-          </h3>
           <button
             type="button"
             id="btnOtherSoftware"
@@ -153,7 +120,7 @@ export default function App() {
               color: "azure",
               fontFamily: "nulshock",
               display: "block",
-              margin: "-60px auto",
+              margin: "-90px auto",
               borderRadius: "40px",
               background: "transparent",
             }}
