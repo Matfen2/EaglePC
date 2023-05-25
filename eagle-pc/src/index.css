@@ -33,6 +33,10 @@ body {
   transform: rotate(90deg);
 }
 
+Swiper .thirdShow .downloadLogiciels {
+  color: azure;
+}
+
 .offers {
   height: 300px;
   background-size: contain;

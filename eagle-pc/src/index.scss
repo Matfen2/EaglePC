@@ -50,7 +50,13 @@ $thirdColor : darkred;
 }
 
 // SHOW 
-
+Swiper {
+    .thirdShow {
+        .downloadLogiciels {
+            color: $firstColor;
+        }
+    }
+}
 
 
 // OFFERS
