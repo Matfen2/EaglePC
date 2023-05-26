@@ -143,6 +143,30 @@ body {
   border: 2px solid azure;
 }
 
+.types {
+  height: 540px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("./data/geforceBackground.jpg");
+}
+.types .typesCards {
+  padding-top: 20px;
+  -moz-column-gap: 120px;
+       column-gap: 120px;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+}
+.types .typesCards p {
+  cursor: pointer;
+  font-weight: bold;
+  font-family: abnes;
+  font-size: 2em;
+  color: azure;
+}
+
 #showCanvas {
   position: absolute;
   top: 0%;
@@ -265,4 +289,12 @@ body {
 @font-face {
   font-family: nulshock;
   src: url("./fonts/nulshock bd.otf");
+}
+@font-face {
+  font-family: abnes;
+  src: url("./fonts/abnes.otf");
+}
+@font-face {
+  font-family: KGBlankSpaceSolid;
+  src: url("./fonts/KGBlankSpaceSolid.ttf");
 }/*# sourceMappingURL=index.css.map */

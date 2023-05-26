@@ -174,6 +174,30 @@ $thirdColor : darkred;
     }
 }
 
+// CARDS
+.types {
+    height: 540px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url('./data/geforceBackground.jpg');
+    .typesCards {
+        padding-top: 20px;
+        column-gap: 120px;
+        text-align: center;
+        justify-content: center;
+        @include flex (row);
+        p {
+            cursor: pointer;
+            font-weight: bold;
+            font-family: abnes;
+            font-size: 2.0em;
+            color: $firstColor;
+        }
+    }
+    
+}
+
 // OFFCANVAS 
 #showCanvas {
     position: absolute;
@@ -334,4 +358,14 @@ $thirdColor : darkred;
 @font-face {
     font-family: nulshock;
     src: url('./fonts/nulshock\ bd.otf');
+}
+
+@font-face {
+    font-family: abnes;
+    src: url('./fonts/abnes.otf');
+}
+
+@font-face {
+    font-family: KGBlankSpaceSolid;
+    src: url('./fonts/KGBlankSpaceSolid.ttf');
 }
