@@ -178,9 +178,8 @@ body {
   text-align: center;
 }
 .Offers .listOffers .row .col-lg-4 .card {
-  margin: 20px auto;
   text-align: center;
-  height: 220px;
+  height: 250px;
   width: 260px;
   background-color: #050801;
   color: #03e9f4;
@@ -189,22 +188,26 @@ body {
   border-radius: 5px;
   letter-spacing: 4px;
   overflow: hidden;
-  transition: 0.5s;
+  transition: all 0.45ms ease;
   cursor: pointer;
   font-family: KGBlankSpaceSolid;
+}
+.Offers .listOffers .row .col-lg-4 .card .card-body .price {
+  margin: 35px auto;
 }
 .Offers .listOffers .row .col-lg-4 .card:hover {
   background: #03e9f4;
   color: #050801;
   box-shadow: 0 0 0px #03e9f4, 0 0 0px #03e9f4, 0 0 0px #03e9f4, 0 0 0px #03e9f4;
 }
+.Offers .listOffers .row .col-lg-4 .card:active {
+  transform: translateY(20px);
+}
 .Offers .listOffers.show {
   display: flex;
   position: relative;
   top: 50%;
   left: 50%;
-  -moz-column-gap: 120px;
-       column-gap: 120px;
   transform: translate(-50%, -50%);
 }
 
@@ -277,6 +280,47 @@ body {
 }
 .cardBackground .listCard .row .gpu .card:hover {
   opacity: 0.9;
+}
+.cardBackground .footer {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.cardBackground .footer #btnContact {
+  padding: 3px;
+  font-size: 1.4em;
+  color: azure;
+  font-family: nulshock;
+  background: transparent;
+  border: 1px solid azure;
+}
+.cardBackground .footer #btnContact:hover {
+  color: black;
+  background-color: azure;
+}
+.cardBackground .footer .copyright {
+  color: azure;
+  font-size: 1.6em;
+  font-weight: bold;
+  font-family: nulshock;
+  margin-left: 120px;
+}
+.cardBackground .footer .listSocial {
+  -moz-column-gap: 60px;
+       column-gap: 60px;
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+.cardBackground .footer .listSocial .socialItem .socialLink {
+  font-size: 1.4em;
+  color: azure;
+  text-decoration: none;
+}
+.cardBackground .footer .listSocial .socialItem .socialLink:hover {
+  color: black;
 }
 
 #showCanvas {

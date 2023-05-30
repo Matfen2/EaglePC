@@ -17,32 +17,32 @@ export default function Offers() {
       <div className="listOffers">
         <div className="row">
           <div className="col-lg-4">
-            <div className="card">
+            <div className="card" style={{marginLeft: '60px', marginRight: '60px'}}>
               <div className="card-body">
                 <p>NVIDIA 2080 SUPER</p>
-                <p>+</p>
+                <p className='plus'>&</p>
                 <p>INTEL CORE I5 13600F</p>
-                <p>654€</p>
+                <p className='price'>654€</p>
               </div>
             </div>
           </div>
           <div className="col-lg-4">
-            <div className="card">
+            <div className="card" style={{marginLeft: '60px', marginRight: '60px'}}>
               <div className="card-body">
-                <p>NVIDIA 2080 SUPER</p>
-                <p>+</p>
-                <p>INTEL CORE I5 13600F</p>
-                <p>654€</p>
+                <p>RTX 3070 GIGABYTE</p>
+                <p>&</p>
+                <p>INTEL CORE I7 13600K</p>
+                <p className='price'>824€</p>
               </div>
             </div>
           </div>
           <div className="col-lg-4">
-            <div className="card">
+            <div className="card" style={{marginLeft: '60px', marginRight: '60px'}}>
               <div className="card-body">
-                <p>NVIDIA 2080 SUPER</p>
-                <p>+</p>
-                <p>INTEL CORE I5 13600F</p>
-                <p>654€</p>
+                <p>RADEON RX 6750XT</p>
+                <p>&</p>
+                <p>AMD RYZEN 9 5950X</p>
+                <p className='price'>1104€</p>
               </div>
             </div>
           </div>

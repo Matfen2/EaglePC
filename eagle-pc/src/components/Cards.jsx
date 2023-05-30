@@ -14,8 +14,12 @@ export default function Cards() {
     <div className="cardBackground">
       <div className="typesCards">
         <div className="row">
-          <button type="button" id="btnCards" onClick={() => setCards(0)}>CPU</button>
-          <button type="button" id="btnCards" onClick={() => setCards(1)}>GPU</button>
+          <button type="button" id="btnCards" onClick={() => setCards(0)}>
+            CPU
+          </button>
+          <button type="button" id="btnCards" onClick={() => setCards(1)}>
+            GPU
+          </button>
         </div>
       </div>
       <div className="listCard">
@@ -107,6 +111,34 @@ export default function Cards() {
             </div>
           </div>
         )}
+      </div>
+      <div className="footer">
+        <button
+          type="button"
+          id="btnContact"
+          data-bs-toggle="modal"
+          data-bs-target="#youContactMe"
+        >
+          CONTACT
+        </button>
+        <p className='copyright'>© Eagle PC</p>
+        <div className="listSocial">
+          <li className='socialItem'>
+            <a href="facebook" className='socialLink'>
+              <i class="fa fa-facebook"></i>
+            </a>
+          </li>
+          <li className='socialItem'>
+            <a href="facebook" className='socialLink'>
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+          <li className='socialItem'>
+            <a href="facebook" className='socialLink'>
+              <i class="fa fa-instagram"></i>
+            </a>
+          </li>
+        </div>
       </div>
     </div>
   );
