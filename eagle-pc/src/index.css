@@ -98,10 +98,9 @@ body {
   margin: 30px auto;
 }
 .thirdShow .downloadSoftwareOne {
-  width: 100%;
-  display: block;
-  margin: auto;
-  max-width: 1200px;
+  font-size: 2.6em;
+  text-align: center;
+  color: azure;
   font-family: nulshock;
 }
 .thirdShow .listSoftware {
@@ -114,15 +113,32 @@ body {
   justify-content: center;
 }
 .thirdShow .listSoftware .row .col-lg-3 {
-  width: 150px;
-  height: 150px;
+  width: 220px;
+  height: 250px;
   cursor: pointer;
 }
 .thirdShow .listSoftware .row .col-lg-3 .img-fluid {
+  height: 200px;
   transition: all 0.25ms ease;
 }
 .thirdShow .listSoftware .row .col-lg-3 .img-fluid:hover {
   transform: scale(1.2);
+}
+.thirdShow .otherSoftware {
+  font-size: 1.8em;
+  text-align: center;
+  color: azure;
+  font-family: nulshock;
+}
+.thirdShow #btnOtherSoftware {
+  padding: 2px;
+  width: 240px;
+  display: block;
+  margin: auto;
+  border-radius: 40px;
+  color: azure;
+  font-family: nulshock;
+  background: transparent;
 }
 
 .Offers {
@@ -137,34 +153,130 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 5px;
-  font-size: 2.5em;
-  background: transparent;
-  border: 2px solid azure;
+  padding: 25px 30px;
+  background-color: #050801;
+  color: #03e9f4;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  letter-spacing: 4px;
+  overflow: hidden;
+  transition: 0.5s;
+  cursor: pointer;
 }
-
-.types {
-  height: 540px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-image: url("./data/geforceBackground.jpg");
+.Offers #btnOffers:hover {
+  background: #03e9f4;
+  color: #050801;
+  box-shadow: 0 0 5px #03e9f4, 0 0 0px #03e9f4, 0 0 0px #03e9f4, 0 0 0px #03e9f4;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(0, 0, 0, 0.3333333333));
 }
-.types .typesCards {
-  padding-top: 20px;
+.Offers .listOffers {
+  display: none;
+  justify-content: center;
+}
+.Offers .listOffers .row {
+  text-align: center;
+}
+.Offers .listOffers .row .col-lg-4 .card {
+  margin: 20px auto;
+  text-align: center;
+  height: 220px;
+  width: 260px;
+  background-color: #050801;
+  color: #03e9f4;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  letter-spacing: 4px;
+  overflow: hidden;
+  transition: 0.5s;
+  cursor: pointer;
+  font-family: KGBlankSpaceSolid;
+}
+.Offers .listOffers .row .col-lg-4 .card:hover {
+  background: #03e9f4;
+  color: #050801;
+  box-shadow: 0 0 0px #03e9f4, 0 0 0px #03e9f4, 0 0 0px #03e9f4, 0 0 0px #03e9f4;
+}
+.Offers .listOffers.show {
+  display: flex;
+  position: relative;
+  top: 50%;
+  left: 50%;
   -moz-column-gap: 120px;
        column-gap: 120px;
-  text-align: center;
-  justify-content: center;
-  display: flex;
-  flex-direction: row;
+  transform: translate(-50%, -50%);
 }
-.types .typesCards p {
-  cursor: pointer;
+
+.cardBackground {
+  padding: 10px;
+  height: auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("./data/geforceBackground.jpg");
+}
+.cardBackground .typesCards {
+  padding-top: 12px;
+}
+.cardBackground .typesCards .row {
+  -moz-column-gap: 60px;
+       column-gap: 60px;
+  justify-content: center;
+}
+.cardBackground .typesCards .row #btnCards {
+  width: 120px;
+  font-size: 2em;
   font-weight: bold;
   font-family: abnes;
-  font-size: 2em;
   color: azure;
+  border: transparent;
+  background: transparent;
+}
+.cardBackground .typesCards .row #btnCards:hover {
+  opacity: 0.8;
+}
+.cardBackground .listCard {
+  justify-content: center;
+}
+.cardBackground .listCard .row {
+  text-align: center;
+}
+.cardBackground .listCard .row .cpu .card {
+  height: 350px;
+  cursor: pointer;
+  border: transparent;
+  background: transparent;
+}
+.cardBackground .listCard .row .cpu .card .card-body .img-fluid {
+  height: 300px;
+  max-width: 400px;
+}
+.cardBackground .listCard .row .cpu .card .card-body .titleCard {
+  font-size: 1.3em;
+  color: azure;
+  font-family: KGBlankSpaceSolid;
+}
+.cardBackground .listCard .row .cpu .card:hover {
+  opacity: 0.9;
+}
+.cardBackground .listCard .row .gpu .card {
+  height: 350px;
+  cursor: pointer;
+  border: transparent;
+  background: transparent;
+}
+.cardBackground .listCard .row .gpu .card .card-body .img-fluid {
+  height: 300px;
+  max-width: 400px;
+}
+.cardBackground .listCard .row .gpu .card .card-body .titleCard {
+  font-size: 1.3em;
+  color: azure;
+  font-family: KGBlankSpaceSolid;
+}
+.cardBackground .listCard .row .gpu .card:hover {
+  opacity: 0.9;
 }
 
 #showCanvas {

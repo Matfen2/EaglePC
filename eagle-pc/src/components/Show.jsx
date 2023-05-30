@@ -75,8 +75,7 @@ export default function App() {
           <Nav />
           <div className="sentenceDownload" style={{ margin: "30px auto" }}>
             <h2 className="downloadSoftwareOne">
-              Télécharger ces logiciels pour tester et comparer vos composants
-              avec d'autres :
+              Améliorer et tester votre PC grace à ces logiciels :
             </h2>
           </div>
           <div className="listSoftware" style={{ margin: "80px auto" }}>
@@ -111,22 +110,8 @@ export default function App() {
               </div>
             </div>
           </div>
-          <button
-            type="button"
-            id="btnOtherSoftware"
-            style={{
-              padding: "2px",
-              width: "240px",
-              color: "azure",
-              fontFamily: "nulshock",
-              display: "block",
-              margin: "-90px auto",
-              borderRadius: "40px",
-              background: "transparent",
-            }}
-          >
-            VOIR LES LOGICILES
-          </button>
+          <p className="otherSoftware">Et bien d'autres</p>
+          <button type="button" id="btnOtherSoftware">VOIR LES LOGICILES</button>
         </SwiperSlide>
       </Swiper>
     </>

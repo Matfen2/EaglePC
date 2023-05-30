@@ -7,13 +7,13 @@ export default function Offcanvas() {
         <div className="offcanvas-body">
           <div className="listCanvas">
             <li>
-              <a href="Benchmark">BENCHMARK</a>
-            </li>
-            <li>
               <a href="Jeux">JEUX</a>
             </li>
             <li>
-              <a href="Drivers">Drivers</a>
+              <a href="Logiciels">LOGICIELS</a>
+            </li>
+            <li>
+              <a href="Optimisation">OPTIMISATION</a>
             </li>
           </div>
         </div>

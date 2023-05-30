@@ -128,10 +128,9 @@ $thirdColor : darkred;
         margin: 30px auto;
     }
     .downloadSoftwareOne {
-        width: 100%;
-        display: block;
-        margin: auto;
-        max-width: 1200px;
+        font-size: 2.6em;
+        text-align: center;
+        color: $firstColor;
         font-family: nulshock;
     }
     .listSoftware {
@@ -141,10 +140,11 @@ $thirdColor : darkred;
             text-align: center;
             justify-content: center;
             .col-lg-3 {
-                width: 150px;
-                height: 150px;
+                width: 220px;
+                height: 250px;
                 cursor: pointer;
                 .img-fluid {
+                    height: 200px;
                     transition: all 0.25ms ease;
                     &:hover {
                         transform: scale(1.2);
@@ -152,6 +152,23 @@ $thirdColor : darkred;
                 }
             }
         }
+    }
+    .otherSoftware {
+        font-size: 1.8em;
+        text-align: center;
+        color: $firstColor;
+        font-family: nulshock;
+    }
+    #btnOtherSoftware {
+        padding: 2px;
+        width: 240px;
+        display: block;
+        margin: auto;
+        border-radius: 40px;
+        color: $firstColor;
+        font-family: nulshock;
+        background: transparent;
+        
     }
 }
 
@@ -167,36 +184,149 @@ $thirdColor : darkred;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        padding: 5px;
-        font-size: 2.5em;
-        background: transparent;
-        border: 2px solid $firstColor;
+        padding: 25px 30px;
+        background-color: #050801;
+        color: #03e9f4;
+        font-weight: bold;
+        border: none;
+        border-radius: 5px;
+        letter-spacing: 4px;
+        overflow: hidden;
+        transition: 0.5s;
+        cursor: pointer;
+        &:hover {
+            background: #03e9f4;
+            color: #050801;
+            box-shadow: 0 0 5px #03e9f4,
+                        0 0 0px #03e9f4,
+                        0 0 0px #03e9f4,
+                        0 0 0px #03e9f4;
+            -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
+        }
+    }
+    .listOffers {
+        display: none;
+        justify-content: center;
+        .row {
+            text-align: center;
+            .col-lg-4 {
+                .card {
+                    margin: 20px auto;
+                    text-align: center;
+                    height: 220px;
+                    width: 260px;
+                    background-color: #050801;
+                    color: #03e9f4;
+                    font-weight: bold;
+                    border: none;
+                    border-radius: 5px;
+                    letter-spacing: 4px;
+                    overflow: hidden;
+                    transition: 0.5s;
+                    cursor: pointer;
+                    font-family: KGBlankSpaceSolid;
+                    &:hover {
+                        background: #03e9f4;
+                        color: #050801;
+                        box-shadow: 0 0 0px #03e9f4,
+                                    0 0 0px #03e9f4,
+                                    0 0 0px #03e9f4,
+                                    0 0 0px #03e9f4;
+                    }
+                }
+            }
+        }
+         &.show {
+        display: flex;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        column-gap: 120px;
+        transform: translate(-50%, -50%);
+    }
     }
 }
 
 // CARDS
-.types {
-    height: 540px;
-    background-repeat: no-repeat;
+.cardBackground {
+    padding: 10px;
+    height: auto;
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     background-image: url('./data/geforceBackground.jpg');
     .typesCards {
-        padding-top: 20px;
-        column-gap: 120px;
-        text-align: center;
-        justify-content: center;
-        @include flex (row);
-        p {
-            cursor: pointer;
-            font-weight: bold;
-            font-family: abnes;
-            font-size: 2.0em;
-            color: $firstColor;
+        padding-top: 12px;
+        .row {
+            column-gap: 60px;
+            justify-content: center;
+            #btnCards {
+                width: 120px;
+                font-size: 2.0em;
+                font-weight: bold;
+                font-family: abnes;
+                color: $firstColor;
+                border: transparent;
+                background: transparent;
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
         }
     }
-    
+    .listCard {
+    justify-content: center;
+    .row {
+        text-align: center;
+        .cpu {
+            .card {
+                height: 350px;
+                cursor: pointer;
+                border: transparent;
+                background: transparent;
+                .card-body {
+                    .img-fluid {
+                        height: 300px;
+                        max-width: 400px;
+                    }
+                    .titleCard {
+                        font-size: 1.3em;
+                        color: $firstColor;
+                        font-family: KGBlankSpaceSolid;
+                    }
+                }
+                &:hover {
+                    opacity: 0.9;
+                }
+            }
+        }
+        .gpu {
+            .card {
+                height: 350px;
+                cursor: pointer;
+                border: transparent;
+                background: transparent;
+                .card-body {
+                    .img-fluid {
+                        height: 300px;
+                        max-width: 400px;
+                    }
+                    .titleCard {
+                        font-size: 1.3em;
+                        color: $firstColor;
+                        font-family: KGBlankSpaceSolid;
+                    }
+                }
+                &:hover {
+                    opacity: 0.9;
+                }
+            }
+        }
+    }
 }
+}
+
+
 
 // OFFCANVAS 
 #showCanvas {
