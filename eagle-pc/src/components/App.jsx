@@ -3,6 +3,7 @@ import Show from './Show'
 import Offers from './Offers'
 import Offcanvas from './Offcanvas'
 import Cards from './Cards'
+import Contact from './Contact'
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/js/bootstrap.bundle.js";
 
@@ -14,6 +15,7 @@ export default function App() {
       <Offers />
       <Offcanvas />
       <Cards />
+      <Contact />
     </div>
   );
 }

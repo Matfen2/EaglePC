@@ -125,17 +125,17 @@ export default function Cards() {
         <div className="listSocial">
           <li className='socialItem'>
             <a href="facebook" className='socialLink'>
-              <i class="fa fa-facebook"></i>
+              <i className="fa fa-facebook"></i>
             </a>
           </li>
           <li className='socialItem'>
             <a href="facebook" className='socialLink'>
-              <i class="fa fa-twitter"></i>
+              <i className="fa fa-twitter"></i>
             </a>
           </li>
           <li className='socialItem'>
             <a href="facebook" className='socialLink'>
-              <i class="fa fa-instagram"></i>
+              <i className="fa fa-instagram"></i>
             </a>
           </li>
         </div>

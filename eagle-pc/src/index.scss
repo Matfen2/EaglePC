@@ -380,7 +380,7 @@ $thirdColor : darkred;
     top: 0%;
     right: 0%;
     width: 100%;
-    max-width: 340px;
+    max-width: 350px;
     height: 250px;
     @include flex (column);
     align-items: center;
@@ -408,7 +408,27 @@ $thirdColor : darkred;
         }
     }
     .offcanvas-footer {
+        @include flex (row);
+        column-gap: 10px;
         #btnLogIn {
+            letter-spacing: 3px;
+            font-size: 1.5em;
+            color: $firstColor;
+            margin-bottom: 30px;
+            font-family: nulshock;
+            background-color: transparent;
+            border: 1px solid $firstColor;
+            &:hover {
+                color: $secondColor;
+                background-color: $firstColor;
+            }
+        }
+        .and {
+            font-size: 1.4em;
+            color: $firstColor;
+            font-family: nulshock;
+        }
+        #btnSignUp {
             letter-spacing: 3px;
             font-size: 1.5em;
             color: $firstColor;
@@ -436,13 +456,174 @@ $thirdColor : darkred;
     }
 }
 
+#logIn {
+    .modal-dialog {
+        .modal-content {
+            color: $firstColor;
+            background-position: center;
+            background-image: url('./data/msiBackground.jpeg');
+            .modal-body {
+                #btnCloseLogIn {
+                    position: absolute;
+                    top: 4%;
+                    left: 97%;
+                    transform: translate(-50%, -50%);
+                    margin-bottom: -20px;
+                    font-size: 1.6em;
+                    color: $thirdColor;
+                    border: transparent;
+                    background: transparent;
+                    &:hover {
+                        color: $firstColor;
+                    }
+                }
+                .connect {
+                    text-align: center;
+                    font-size: 1.4em;
+                    font-family: nulshock;
+                }
+                form {
+                    justify-content: center;
+                    @include flex (column);
+                    input {
+                        font-size: 1.4em;
+                        width: 100%;
+                        margin: 15px auto;
+                        max-width: 40%;
+                        display: block;
+                    }
+                    #logInConnect {
+                        font-size: 0.8em;
+                        width: 30%;
+                        padding: 5px;
+                        margin: 5px auto;
+                        color: $firstColor;
+                        border-radius: 40px;
+                        font-family: nulshock;
+                        background: transparent;
+                        transition: all 0.25ms ease;
+                        border: 1px solid $firstColor;
+                        &:hover {
+                            color: $secondColor;
+                            background-color: $firstColor;
+                        }
+                        &:active {
+                            transform: translateY(5px);
+                        }
+                    }
+                }
+                .noCompte {
+                    margin: 10px auto;
+                    font-size: 1.0em;
+                    text-align: center;
+                    font-family: nulshock;
+                    .inscrire {
+                        cursor: pointer;
+                        &:hover {
+                            opacity: 0.8;
+                        }
+                    }
+                }
+            }          
+        }
+    }
+}
+
+#signUp {
+    .modal-dialog {
+        .modal-content {
+            width: 100%;
+            max-width: 750px;
+            height: auto;
+            color: $firstColor;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url('./data/tronBackground2.jpg');
+            #btnCloseSignUp {
+                position: relative;
+                top: 2%;
+                left: 100%;
+                transform: translate(-50%, -50%);
+                font-size: 1.6em;
+                color: $firstColor;
+                text-shadow: #963535 0px 0px 5px, #FF2D95 0px 0px 30px, 2px 0px 0px rgba(206,89,55,0);
+                border: transparent;
+                background: transparent;
+                &:hover {
+                    color: $thirdColor;
+                    
+                }
+            }
+            .inscribe {
+                text-align: center;
+                font-size: 1.6em;
+                font-family: nulshock;
+                margin-bottom: -1px;
+                text-shadow: #963535 0px 0px 5px, #FF2D95 0px 0px 30px, 2px 0px 0px rgba(206,89,55,0);
+            }
+            form {
+                text-align: center;
+                .col-lg-6 {
+                    input {
+                        width: 80%;
+                        margin: 10px;
+                    }
+                }
+                #logInConnect {
+                    color: #03e9f4;
+                    margin-top: 10px;
+                    font-size: 1.0em;
+                    border-radius: 40px;
+                    font-family: nulshock;
+                    margin-bottom: 10px;
+                    border: 1px solid $firstColor;
+                    background-color: $secondColor;
+                    text-shadow: #963535 0px 0px 5px, #FF2D95 0px 0px 30px, 2px 0px 0px rgba(206,89,55,0);
+                    &:hover {
+                        color: $firstColor;
+                        background: transparent;
+                    }
+                }
+                .col-lg-12 {
+                    column-gap: 30px;
+                    @include flex (row);
+                    justify-content: center;
+                    .check {
+                        input {
+                            cursor: pointer;
+                        }
+                        label {
+                            font-size: 1.1em;
+                            font-family: nulshock;
+                            text-shadow: #963535 0px 0px 5px, #FF2D95 0px 0px 30px, 2px 0px 0px rgba(206,89,55,0);
+                        }
+                    }
+                }
+            }
+            .haveCompte {
+                    margin: 10px auto;
+                    font-size: 1.0em;
+                    text-align: center;
+                    font-family: nulshock;
+                    text-shadow: #963535 0px 0px 5px, #FF2D95 0px 0px 30px, 2px 0px 0px rgba(206,89,55,0);
+                    .connectYou {
+                        cursor: pointer;
+                        &:hover {
+                            opacity: 0.8;
+                        }
+                    }
+                }
+        }
+    }
+}
+
 // MEDIA QUERRY
 @media screen and (max-width: 982px) {
     .secondShow {
         .team {
             font-size: 4.2em;
         }
-    
         p {
             text-align: center;
             margin-top: 350px;
