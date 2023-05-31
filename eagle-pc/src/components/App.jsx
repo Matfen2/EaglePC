@@ -4,9 +4,9 @@ import Offers from './Offers'
 import Offcanvas from './Offcanvas'
 import Cards from './Cards'
 import Contact from './Contact'
+import Gpu from './GPU'
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/js/bootstrap.bundle.js";
-
 
 export default function App() {
   return (
@@ -16,6 +16,7 @@ export default function App() {
       <Offcanvas />
       <Cards />
       <Contact />
+      <Gpu />
     </div>
   );
 }

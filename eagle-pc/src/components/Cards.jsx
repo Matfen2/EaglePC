@@ -26,7 +26,7 @@ export default function Cards() {
         {cards === 0 && (
           <div className="row">
             <div className="col-lg-3 cpu">
-              <div className="card">
+              <div className="card" data-bs-toggle="modal" data-bs-target="#intelI512400F">
                 <div className="card-body">
                   <img src={cpuOne} className="img-fluid w-100" alt="pictCPU" />
                   <p className="titleCard">INTEL CORE I5 12400F</p>
@@ -34,7 +34,7 @@ export default function Cards() {
               </div>
             </div>
             <div className="col-lg-3 cpu">
-              <div className="card">
+              <div className="card" data-bs-toggle="modal" data-bs-target="#amdRyzen5600X">
                 <div className="card-body">
                   <img src={cpuTwo} className="img-fluid w-100" alt="pictCPU" />
                   <p className="titleCard">AMD RYZEN 5600X</p>
@@ -42,7 +42,7 @@ export default function Cards() {
               </div>
             </div>
             <div className="col-lg-3 cpu">
-              <div className="card">
+              <div className="card" data-bs-toggle="modal" data-bs-target="#intelI513600K">
                 <div className="card-body">
                   <img
                     src={cpuThree}
@@ -54,7 +54,7 @@ export default function Cards() {
               </div>
             </div>
             <div className="col-lg-3 cpu">
-              <div className="card">
+              <div className="card" data-bs-toggle="modal" data-bs-target="#amdRyzen7700">
                 <div className="card-body">
                   <img
                     src={cpuFour}
@@ -70,7 +70,7 @@ export default function Cards() {
         {cards === 1 && (
           <div className="row">
             <div className="col-lg-3 gpu">
-              <div className="card">
+              <div className="card" data-bs-toggle="modal" data-bs-target="#nvidia2060Super">
                 <div className="card-body">
                   <img src={gpuOne} className="img-fluid w-100" alt="pictCPU" />
                   <p className="titleCard">NVIDIA RTX 2060 SUPER</p>
@@ -78,7 +78,7 @@ export default function Cards() {
               </div>
             </div>
             <div className="col-lg-3 gpu">
-              <div className="card">
+              <div className="card" data-bs-toggle="modal" data-bs-target="#radeon6700XT">
                 <div className="card-body">
                   <img src={gpuTwo} className="img-fluid w-100" alt="pictCPU" />
                   <p className="titleCard">RADEON RX 6700XT</p>
@@ -86,7 +86,7 @@ export default function Cards() {
               </div>
             </div>
             <div className="col-lg-3 gpu">
-              <div className="card">
+              <div className="card" data-bs-toggle="modal" data-bs-target="#nvidia3070Eagle">
                 <div className="card-body">
                   <img
                     src={gpuThree}
@@ -98,7 +98,7 @@ export default function Cards() {
               </div>
             </div>
             <div className="col-lg-3 gpu">
-              <div className="card">
+              <div className="card" data-bs-toggle="modal" data-bs-target="#radeon6900XT">
                 <div className="card-body">
                   <img
                     src={gpuFour}

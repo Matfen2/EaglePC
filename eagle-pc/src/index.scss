@@ -372,7 +372,35 @@ $thirdColor : darkred;
     }
 }
 
-
+// GPU
+#nvidia2060Super {
+    .modal-dialog {
+        height: 600px;
+        max-width: 1400px;
+        .modal-content {
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url('./data/gpuBackground.png');
+            .modal-body {
+                .row {
+                    .col-lg-4 {
+                        .img-fluid {
+                            height: 500px;
+                            max-width: 750px;
+                            margin-bottom: 10px;
+                        }
+                        .nameCards {
+                            font-size: 1.4em;
+                            text-align: center;
+                            font-family: KGBlankSpaceSolid;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
 // OFFCANVAS 
 #showCanvas {
