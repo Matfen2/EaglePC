@@ -34,17 +34,18 @@ body {
 }
 
 .firstShow .listFree .row .col-lg-6 #firstOne {
-  height: 560px;
-  max-width: 1250px;
+  height: 580px;
+  max-width: 1050px;
+  margin-left: 85px;
 }
 .firstShow .listFree .row .col-lg-6 #firstTwo {
   margin-top: -160px;
   margin-left: 100px;
-  height: 660px;
+  height: 730px;
 }
 .firstShow .listFree #btnBuyCard {
   display: block;
-  margin: 120px auto;
+  margin: 100px auto;
   padding: 5px;
   width: 130px;
   cursor: pointer;
@@ -124,13 +125,13 @@ body {
 .thirdShow .listSoftware .row .col-lg-3 .img-fluid:hover {
   transform: scale(1.2);
 }
-.thirdShow .otherSoftware {
+.thirdShow .showSoftware .otherSoftware {
   font-size: 1.8em;
   text-align: center;
   color: azure;
   font-family: nulshock;
 }
-.thirdShow #btnOtherSoftware {
+.thirdShow .showSoftware #btnOtherSoftware {
   padding: 2px;
   width: 240px;
   display: block;
@@ -383,6 +384,7 @@ body {
 }
 #nvidia2080Super .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive-lg table tbody tr, #radeon6700XT .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive-lg table tbody tr, #nvidia3070Eagle .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive-lg table tbody tr, #radeon6900XT .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive-lg table tbody tr, #intelI512400F .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive-lg table tbody tr, #amdRyzen5600X .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive-lg table tbody tr, #intelI513600K .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive-lg table tbody tr, #amdRyzen7700 .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive-lg table tbody tr {
   line-height: 85px;
+  background-color: transparent;
 }
 #nvidia2080Super .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive-lg table tbody tr th, #radeon6700XT .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive-lg table tbody tr th, #nvidia3070Eagle .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive-lg table tbody tr th, #radeon6900XT .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive-lg table tbody tr th, #intelI512400F .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive-lg table tbody tr th, #amdRyzen5600X .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive-lg table tbody tr th, #intelI513600K .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive-lg table tbody tr th, #amdRyzen7700 .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive-lg table tbody tr th {
   font-size: 1.2em;
@@ -425,6 +427,87 @@ body {
 }
 #nvidia2080Super .modal-dialog .modal-content .modal-body .row .col-lg-8 .cardBuy #btnBenchmark:hover, #radeon6700XT .modal-dialog .modal-content .modal-body .row .col-lg-8 .cardBuy #btnBenchmark:hover, #nvidia3070Eagle .modal-dialog .modal-content .modal-body .row .col-lg-8 .cardBuy #btnBenchmark:hover, #radeon6900XT .modal-dialog .modal-content .modal-body .row .col-lg-8 .cardBuy #btnBenchmark:hover, #intelI512400F .modal-dialog .modal-content .modal-body .row .col-lg-8 .cardBuy #btnBenchmark:hover, #amdRyzen5600X .modal-dialog .modal-content .modal-body .row .col-lg-8 .cardBuy #btnBenchmark:hover, #intelI513600K .modal-dialog .modal-content .modal-body .row .col-lg-8 .cardBuy #btnBenchmark:hover, #amdRyzen7700 .modal-dialog .modal-content .modal-body .row .col-lg-8 .cardBuy #btnBenchmark:hover {
   background-color: black;
+}
+
+#youContactMe .modal-dialog {
+  height: 600px;
+  max-width: 1050px;
+}
+#youContactMe .modal-dialog .modal-content {
+  padding: 10px;
+  color: azure;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("./data/contactBackground.jpeg");
+}
+#youContactMe .modal-dialog .modal-content #btnCloseContact {
+  position: absolute;
+  top: 0%;
+  left: 97%;
+  font-size: 1.4em;
+  color: azure;
+  margin-bottom: -30px;
+  border: transparent;
+  background: transparent;
+}
+#youContactMe .modal-dialog .modal-content #btnCloseContact:hover {
+  color: black;
+}
+#youContactMe .modal-dialog .modal-content .contact {
+  margin-top: 10px;
+  font-size: 1.1em;
+  text-align: center;
+  font-family: nulshock;
+}
+#youContactMe .modal-dialog .modal-content .row .col-lg-8 form .row {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+}
+#youContactMe .modal-dialog .modal-content .row .col-lg-8 form .row input {
+  width: 100%;
+}
+#youContactMe .modal-dialog .modal-content .row .col-lg-8 form .row select {
+  width: 100%;
+  cursor: pointer;
+}
+#youContactMe .modal-dialog .modal-content .row .col-lg-8 form .row .message {
+  border-radius: 40px;
+  margin: 10px auto;
+  text-align: center;
+}
+#youContactMe .modal-dialog .modal-content .row .col-lg-8 #btnSend {
+  padding: 6px;
+  height: 40px;
+  width: 90px;
+  display: block;
+  margin: auto;
+  border-radius: 40px;
+  background: transparent;
+}
+#youContactMe .modal-dialog .modal-content .row .info .contactInfo {
+  line-height: 40px;
+  list-style-type: none;
+}
+#youContactMe .modal-dialog .modal-content .row .info .contactInfo .meInfo {
+  font-size: 1.1em;
+  font-family: nulshock;
+}
+#youContactMe .modal-dialog .modal-content .row .info .contactInfo .warning {
+  font-size: 0.7em;
+}
+#youContactMe .modal-dialog .modal-content .row #btnSendContact {
+  display: block;
+  margin: auto;
+  padding: 5px;
+  color: azure;
+  font-family: nulshock;
+  border-radius: 40px;
+  background: transparent;
+}
+#youContactMe .modal-dialog .modal-content .row #btnSendContact:hover {
+  color: black;
 }
 
 #showCanvas {
@@ -657,63 +740,160 @@ body {
   opacity: 0.8;
 }
 
-@media screen and (max-width: 982px) {
-  .secondShow .team {
-    font-size: 4.2em;
+@media screen and (max-width: 1588px) {
+  .thirdShow .downloadSoftwareOne {
+    font-size: 2em;
   }
-  .secondShow p {
-    text-align: center;
-    margin-top: 350px;
-    font-size: 1.4em;
-    font-family: nulshock;
-    color: azure;
+  .thirdShow .listSoftware .row .col-lg-3 {
+    width: 150px;
   }
-}
-@media screen and (max-width: 836px) {
-  #btnLogIn {
-    width: 120px;
-    margin-right: 80px;
-  }
-  #showCanvas {
-    height: 300px;
-    max-width: 250px;
-  }
-  #showCanvas .offcanvas-body .listCanvas {
-    line-height: 60px;
-  }
-  #showCanvas .offcanvas-footer #btnLogIn {
-    margin-left: 70px;
-    width: 160px;
+  .thirdShow .listSoftware .row .col-lg-3 .img-fluid {
+    width: 100px;
+    height: 150px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1175px) {
+  .thirdShow .downloadSoftwareOne {
+    font-size: 2em;
+  }
+  .thirdShow .listSoftware .row {
+    -moz-column-gap: 120px;
+         column-gap: 120px;
+  }
+  .thirdShow .listSoftware .row .col-lg-3 {
+    width: 100px;
+    height: 160px;
+  }
+  .thirdShow .listSoftware .row .col-lg-3 .img-fluid {
+    width: 170px;
+    height: 100px;
+  }
+  .thirdShow .showSoftware {
+    margin-top: -10px;
+  }
+}
+@media screen and (max-width: 1121px) {
   .firstShow .listFree .row .col-lg-6 #firstOne {
-    margin-left: -20px;
-    margin-top: -30px;
-    height: 260px;
+    height: 400px;
   }
   .firstShow .listFree .row .col-lg-6 #firstTwo {
-    margin-top: -20px;
-    margin-left: 0px;
-    height: 420px;
+    margin-top: -140px;
+    margin-left: 80px;
+    height: 750px;
   }
-}
-@media screen and (max-width: 715px) {
-  .secondShow .team {
-    margin-top: -4px;
+  .firstShow .listFree #btnBuyCard {
+    margin: 10px auto;
   }
   .secondShow .overUnder .img-fluid {
-    height: 420px;
-    margin-bottom: -350px;
+    height: 450px;
   }
-  .secondShow p {
-    margin-top: 360px;
+  .secondShow #btnAstuces {
+    margin-top: -10px;
   }
 }
-@media screen and (max-width: 455px) {
-  .secondShow .team {
-    margin-top: -2px;
-    font-size: 4em;
+@media screen and (max-width: 991px) {
+  .Offers {
+    height: 1000px;
+  }
+  .Offers .listOffers .row {
+    display: block;
+    margin: auto;
+  }
+  .Offers .listOffers .row .col-lg-4 .card {
+    margin: 40px;
+  }
+  #youContactMe .modal-dialog {
+    max-width: 400px;
+  }
+  #youContactMe .modal-dialog .modal-content #btnCloseContact {
+    position: absolute;
+    top: 0%;
+    left: 92%;
+  }
+  #youContactMe .modal-dialog .modal-content .row .col-lg-8 form .row input {
+    margin: 10px;
+    width: 70%;
+  }
+  #youContactMe .modal-dialog .modal-content .row .col-lg-8 form .row select {
+    margin: 10px;
+    width: 70%;
+  }
+  #youContactMe .modal-dialog .modal-content .row .col-lg-8 form .row textarea {
+    width: 70%;
+  }
+  #youContactMe .modal-dialog .modal-content .row .col-lg-4 {
+    text-align: center;
+  }
+  #youContactMe .modal-dialog .modal-content .row .col-lg-4 .contactInfo {
+    margin-top: 10px;
+    margin-right: 25px;
+  }
+}
+@media screen and (max-width: 825px) {
+  .thirdShow .downloadSoftwareOne {
+    font-size: 2em;
+  }
+  .thirdShow .listSoftware .row {
+    -moz-column-gap: 220px;
+         column-gap: 220px;
+  }
+  .thirdShow .listSoftware .row .col-lg-3 {
+    width: 150px;
+    height: 160px;
+  }
+  .thirdShow .listSoftware .row .col-lg-3 .img-fluid {
+    width: 100px;
+    height: 100px;
+  }
+  .thirdShow .showSoftware {
+    margin-top: -110px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .firstShow .listFree .row .col-lg-6 #firstOne {
+    height: 250px;
+    margin-top: -20px;
+    margin-left: -30px;
+  }
+  .firstShow .listFree .row .col-lg-6 #firstTwo {
+    margin-top: 10px;
+    margin-left: -10px;
+    height: 380px;
+  }
+  .firstShow .listFree #btnBuyCard {
+    margin: -5px auto;
+  }
+}
+@media screen and (max-width: 640px) {
+  .cardBackground .footer .copyright {
+    font-size: 1.1em;
+    padding-top: 10px;
+    margin-right: 80px;
+  }
+  .cardBackground .footer .listSocial {
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+  }
+}
+@media screen and (max-width: 612px) {
+  .thirdShow .downloadSoftwareOne {
+    font-size: 2em;
+  }
+  .thirdShow .listSoftware .row {
+    -moz-column-gap: 220px;
+         column-gap: 220px;
+  }
+  .thirdShow .listSoftware .row .col-lg-3 {
+    margin-top: -20px;
+    width: 150px;
+    height: 160px;
+  }
+  .thirdShow .listSoftware .row .col-lg-3 .img-fluid {
+    width: 100px;
+    height: 90px;
+  }
+  .thirdShow .showSoftware {
+    margin-top: -110px;
   }
 }
 @font-face {

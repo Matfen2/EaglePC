@@ -55,19 +55,20 @@ $thirdColor : darkred;
     .row {
         .col-lg-6 {
             #firstOne {
-                height: 560px;
-                max-width: 1250px;
+                height: 580px;
+                max-width: 1050px;
+                margin-left: 85px;
             }
             #firstTwo {
                 margin-top: -160px;
                 margin-left: 100px;
-                height: 660px;
+                height: 730px;
             }
         }
     }
     #btnBuyCard {
         display: block;
-        margin: 120px auto;
+        margin: 100px auto;
         padding: 5px;
         width: 130px;
         cursor: pointer;
@@ -153,22 +154,24 @@ $thirdColor : darkred;
             }
         }
     }
-    .otherSoftware {
-        font-size: 1.8em;
-        text-align: center;
-        color: $firstColor;
-        font-family: nulshock;
-    }
-    #btnOtherSoftware {
-        padding: 2px;
-        width: 240px;
-        display: block;
-        margin: auto;
-        border-radius: 40px;
-        color: $firstColor;
-        font-family: nulshock;
-        background: transparent;
-        
+    .showSoftware {
+        .otherSoftware {
+            font-size: 1.8em;
+            text-align: center;
+            color: $firstColor;
+            font-family: nulshock;
+        }
+        #btnOtherSoftware {
+            padding: 2px;
+            width: 240px;
+            display: block;
+            margin: auto;
+            border-radius: 40px;
+            color: $firstColor;
+            font-family: nulshock;
+            background: transparent;
+            
+        }
     }
 }
 
@@ -372,7 +375,7 @@ $thirdColor : darkred;
     }
 }
 
-// GPU
+// GPU/CPU
 #nvidia2080Super, #radeon6700XT, #nvidia3070Eagle, #radeon6900XT, #intelI512400F, #amdRyzen5600X, #intelI513600K, #amdRyzen7700{
     .modal-dialog {
         height: 600px;
@@ -438,6 +441,7 @@ $thirdColor : darkred;
                                     margin-left: -30px;
                                     tr {
                                         line-height: 85px;
+                                        background-color: transparent;
                                         th {
                                             font-size: 1.2em;
                                             text-align: center;
@@ -484,6 +488,98 @@ $thirdColor : darkred;
                                 }
                             }
                         }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// CONTACT
+#youContactMe {
+    .modal-dialog {
+        height: 600px;
+        max-width: 1050px;
+        .modal-content {
+            padding: 10px;
+            color: $firstColor;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url('./data/contactBackground.jpeg');
+            #btnCloseContact {
+                position: absolute;
+                top: 0%;
+                left: 97%;
+                font-size: 1.4em;
+                color: $firstColor;
+                margin-bottom: -30px;
+                border: transparent;
+                background: transparent;
+                &:hover {
+                    color: $secondColor;
+                }
+            }
+            .contact {
+                margin-top: 10px;
+                font-size: 1.1em;
+                text-align: center;
+                font-family: nulshock;
+            }
+            .row {
+                .col-lg-8 {
+                    form {
+                        .row {
+                            text-align: center;
+                            display: flex;
+                            flex-direction: row;
+                            input {
+                                width: 100%;
+                            }
+                            select {
+                                width: 100%;
+                                cursor: pointer;
+                            }
+                            .message {
+                                border-radius: 40px;
+                                margin: 10px auto;
+                                text-align: center;
+                            }
+                        }
+                    }
+                    #btnSend {
+                        padding: 6px;
+                        height: 40px;
+                        width: 90px;
+                        display: block;
+                        margin: auto;
+                        border-radius: 40px;
+                        background: transparent;
+                    }
+                }
+                .info {
+                    .contactInfo {
+                        line-height: 40px;
+                        list-style-type: none;
+                       .meInfo {
+                        font-size: 1.1em;
+                        font-family: nulshock;
+                       }
+                        .warning {
+                            font-size: 0.7em;
+                        }
+                    }
+                }
+                #btnSendContact {
+                    display: block;
+                    margin: auto;
+                    padding: 5px;
+                    color: $firstColor;
+                    font-family: nulshock;
+                    border-radius: 40px;
+                    background: transparent;
+                    &:hover {
+                        color: $secondColor;
                     }
                 }
             }
@@ -736,90 +832,222 @@ $thirdColor : darkred;
 }
 
 // MEDIA QUERRY
-@media screen and (max-width: 982px) {
-    .secondShow {
-        .team {
-            font-size: 4.2em;
+@media screen and (max-width: 1588px) {
+    .thirdShow {
+        .downloadSoftwareOne {
+            font-size: 2.0em;
         }
-        p {
-            text-align: center;
-            margin-top: 350px;
-            font-size: 1.4em;
-            font-family: nulshock;
-            color: $firstColor;
-        }   
-    }
-}
-
-@media screen and (max-width: 836px) {
-    #btnLogIn {
-        width: 120px;
-        margin-right: 80px;
-    }
-
-    #showCanvas {
-        height: 300px;
-        max-width: 250px;
-        .offcanvas-body {
-            .listCanvas {
-                line-height: 60px;
-            }
-        }
-        .offcanvas-footer {
-            #btnLogIn {
-                margin-left: 70px;
-                width: 160px;
+        .listSoftware {
+            .row {
+                .col-lg-3 {
+                    width: 150px;
+                    .img-fluid {
+                        width: 100px;
+                        height: 150px;
+                    }
+                }
             }
         }
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1175px) {
+    .thirdShow {
+       .downloadSoftwareOne {
+            font-size: 2.0em;
+        }
+        .listSoftware {
+            .row {
+                column-gap: 120px;
+                .col-lg-3 {
+                    width: 100px;
+                    height: 160px;
+                    .img-fluid {
+                        width: 170px;
+                        height: 100px;
+                    }
+                }
+            }
+        } 
+        .showSoftware {
+            margin-top: -10px;
+        }
+    }
+}
+
+@media screen and (max-width: 1121px) {
     .firstShow {
         .listFree {
             .row {
                 .col-lg-6 {
                     #firstOne {
-                        margin-left: -20px;
-                        margin-top: -30px;
-                        height: 260px;
-
+                        height: 400px;
                     }
                     #firstTwo {
-                        margin-top: -20px;
-                        margin-left: 0px;
-                        height: 420px;
+                        margin-top: -140px;
+                        margin-left: 80px;
+                        height: 750px;
                     }
                 }
             }
-        }  
-    }
-}
-
-@media screen and (max-width: 715px) {
-    .secondShow {
-        .team {
-            margin-top: -4px;
-        }
-        .overUnder {
-            .img-fluid {
-                height: 420px;
-                margin-bottom: -350px;
+            #btnBuyCard {
+                margin: 10px auto;
             }
         }
-        p {
-            margin-top: 360px;
+    }
+    .secondShow {
+        .overUnder {
+            .img-fluid {
+                height: 450px;
+            }
+        }
+        #btnAstuces {
+            margin-top: -10px;
         }
     }
 }
 
-@media screen and (max-width: 455px) {
-    .secondShow {
-        .team {
-            margin-top: -2px;
-           font-size: 4.0em;
+@media screen and (max-width: 991px) {
+    .Offers {
+        height: 1000px;
+        .listOffers {
+            .row {
+                display: block;
+                margin: auto;
+                .col-lg-4 {
+                    .card {
+                        margin: 40px;
+                    }
+                }
+            }
         }
-        
+    }
+    #youContactMe {
+        .modal-dialog {
+            max-width: 400px;
+            .modal-content {
+                #btnCloseContact {
+                    position: absolute;
+                    top: 0%;
+                    left: 92%;
+                    
+                }
+                .row {
+                    .col-lg-8 {
+                        form {
+                            .row {
+                                input {
+                                    margin: 10px;
+                                    width: 70%;
+                                }
+                                select {
+                                    margin: 10px;
+                                    width: 70%;
+                                }
+                                textarea {
+                                    width: 70%;
+                                }
+                            }
+                        }
+                    }
+                    .col-lg-4 {
+                        text-align: center;
+                        .contactInfo {
+                            margin-top: 10px;
+                            margin-right: 25px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 825px) {
+    .thirdShow {
+       .downloadSoftwareOne {
+            font-size: 2.0em;
+        }
+        .listSoftware {
+            .row {
+                column-gap: 220px;
+                .col-lg-3 {
+                    width: 150px;
+                    height: 160px;
+                    .img-fluid {
+                        width: 100px;
+                        height: 100px;
+                    }
+                }
+            }
+        } 
+        .showSoftware {
+            margin-top: -110px;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .firstShow {
+        .listFree {
+            .row {
+                .col-lg-6 {
+                    #firstOne {
+                        height: 250px;
+                        margin-top: -20px;
+                        margin-left: -30px;
+                    }
+                    #firstTwo {
+                        margin-top: 10px;
+                        margin-left: -10px;
+                        height: 380px;
+                    }
+                }
+            }
+            #btnBuyCard {
+                margin: -5px auto;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .cardBackground {
+        .footer {
+            .copyright {
+                font-size: 1.1em;
+                padding-top: 10px;
+                margin-right: 80px;
+            }
+            .listSocial {
+                column-gap: 30px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 612px) {
+    .thirdShow {
+       .downloadSoftwareOne {
+            font-size: 2.0em;
+        }
+        .listSoftware {
+            .row {
+                column-gap: 220px;
+                .col-lg-3 {
+                    margin-top: -20px;
+                    width: 150px;
+                    height: 160px;
+                    .img-fluid {
+                        width: 100px;
+                        height: 90px;
+                    }
+                }
+            }
+        } 
+        .showSoftware {
+            margin-top: -110px;
+        }
     }
 }
 

@@ -40,15 +40,15 @@ export default function App() {
           <Nav />
           <div className="listFree">
             <div className="row">
-              <div className="col-lg-6 col-md-6">
-                  <img
-                    src={showFirstOne}
-                    className="img-fluid w-100"
-                    id="firstOne"
-                    alt="showFirstOne"
-                  />
+              <div className="col-lg-6 col-md-4">
+                <img
+                  src={showFirstOne}
+                  className="img-fluid w-100"
+                  id="firstOne"
+                  alt="showFirstOne"
+                />
               </div>
-              <div className="col-lg-6 col-md-6">
+              <div className="col-lg-6 col-md-8">
                 <img
                   src={showFirstTwo}
                   className="img-fluid w-100"
@@ -57,7 +57,9 @@ export default function App() {
                 />
               </div>
             </div>
-            <button type="button" id="btnBuyCard">ACHETER</button>
+            <button type="button" id="btnBuyCard">
+              ACHETER
+            </button>
           </div>
         </SwiperSlide>
         <SwiperSlide className="secondShow">
@@ -110,8 +112,12 @@ export default function App() {
               </div>
             </div>
           </div>
-          <p className="otherSoftware">Et bien d'autres</p>
-          <button type="button" id="btnOtherSoftware">VOIR LES LOGICILES</button>
+          <div className="showSoftware">
+            <p className="otherSoftware">Et bien d'autres</p>
+            <button type="button" id="btnOtherSoftware">
+              VOIR LES LOGICIELS
+            </button>
+          </div>
         </SwiperSlide>
       </Swiper>
     </>
