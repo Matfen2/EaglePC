@@ -3,7 +3,7 @@ import cpuOne from '../data/cpu/intelCorei512400F.JPEG'
 import cpuTwo from '../data/cpu/amdRyzen5600X.jpeg'
 import cpuThree from '../data/cpu/intelCorei513600K.jpeg'
 import cpuFour from '../data/cpu/amdRyzen7700.jpeg'
-import gpuOne from '../data/gpu/rtx2060Super.png'
+import gpuOne from '../data/gpu/nvidia2080Super.png'
 import gpuTwo from '../data/gpu/radeonRX6700XT.png'
 import gpuThree from '../data/gpu/rtx3070Eagle.png'
 import gpuFour from '../data/gpu/radeonRX6900XT.png'
@@ -70,7 +70,7 @@ export default function Cards() {
         {cards === 1 && (
           <div className="row">
             <div className="col-lg-3 gpu">
-              <div className="card" data-bs-toggle="modal" data-bs-target="#nvidia2060Super">
+              <div className="card" data-bs-toggle="modal" data-bs-target="#nvidia2080Super">
                 <div className="card-body">
                   <img src={gpuOne} className="img-fluid w-100" alt="pictCPU" />
                   <p className="titleCard">NVIDIA RTX 2060 SUPER</p>

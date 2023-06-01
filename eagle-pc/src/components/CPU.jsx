@@ -6,17 +6,17 @@ import cyberpunk2077 from "../data/games/cyberpunk2077.jpeg";
 import doomEternal from "../data/games/DoomEternalLogo.jpeg";
 
 // GPU
-import gpuOne from "../data/gpu/nvidia2080Super.png";
-import gpuTwo from "../data/gpu/radeonRX6700XT.png";
-import gpuThree from "../data/gpu/rtx3070Eagle.png";
-import gpuFour from "../data/gpu/radeonRX6900XT.png";
+import cpuOne from "../data/cpu/intelCorei512400F.JPEG";
+import cpuTwo from "../data/cpu/amdRyzen5600X.jpeg";
+import cpuThree from "../data/cpu/intelCorei513600K.jpeg";
+import cpuFour from "../data/cpu/amdRyzen7700.jpeg";
 
 export default function CpuCards() {
   const [graphics, setGraphics] = useState();
 
   return (
     <div>
-      <div className="modal fade" id="nvidia2080Super" tabIndex="-1">
+      <div className="modal fade" id="intelI512400F" tabIndex="-1">
         <div className="modal-dialog modal-dialog-centered">
           <div className="modal-content">
             <div className="modal-body">
@@ -26,11 +26,11 @@ export default function CpuCards() {
               <div className="row">
                 <div className="col-lg-4">
                   <img
-                    src={gpuOne}
+                    src={cpuOne}
                     className="img-fluid w-100"
                     alt="pictCard"
                   />
-                  <p className="nameCards">NVIDIA 2080 Super</p>
+                  <p className="nameCards">INTEL CORE I5 12400F</p>
                 </div>
                 <div className="col-lg-8">
                   <div className="listHD">
@@ -228,7 +228,7 @@ export default function CpuCards() {
           </div>
         </div>
       </div>
-      <div className="modal fade" id="radeon6700XT" tabIndex="-1">
+      <div className="modal fade" id="amdRyzen5600X" tabIndex="-1">
         <div className="modal-dialog modal-dialog-centered">
           <div className="modal-content">
             <div className="modal-body">
@@ -238,11 +238,11 @@ export default function CpuCards() {
               <div className="row">
                 <div className="col-lg-4">
                   <img
-                    src={gpuTwo}
+                    src={cpuTwo}
                     className="img-fluid w-100"
                     alt="pictCard"
                   />
-                  <p className="nameCards">RADEON 6700 XT</p>
+                  <p className="nameCards">AMD RYZEN 5600X</p>
                 </div>
                 <div className="col-lg-8">
                   <div className="listHD">
@@ -440,7 +440,7 @@ export default function CpuCards() {
           </div>
         </div>
       </div>
-      <div className="modal fade" id="nvidia3070Eagle" tabIndex="-1">
+      <div className="modal fade" id="intelI513600K" tabIndex="-1">
         <div className="modal-dialog modal-dialog-centered">
           <div className="modal-content">
             <div className="modal-body">
@@ -450,11 +450,11 @@ export default function CpuCards() {
               <div className="row">
                 <div className="col-lg-4">
                   <img
-                    src={gpuThree}
+                    src={cpuThree}
                     className="img-fluid w-100"
                     alt="pictCard"
                   />
-                  <p className="nameCards">NVIDIA 3070 EAGLE</p>
+                  <p className="nameCards">INTEL CORE I5 13600K</p>
                 </div>
                 <div className="col-lg-8">
                   <div className="listHD">
@@ -652,7 +652,7 @@ export default function CpuCards() {
           </div>
         </div>
       </div>
-      <div className="modal fade" id="radeon6900XT" tabIndex="-1">
+      <div className="modal fade" id="amdRyzen7700" tabIndex="-1">
         <div className="modal-dialog modal-dialog-centered">
           <div className="modal-content">
             <div className="modal-body">
@@ -662,11 +662,11 @@ export default function CpuCards() {
               <div className="row">
                 <div className="col-lg-4">
                   <img
-                    src={gpuFour}
+                    src={cpuFour}
                     className="img-fluid w-100"
                     alt="pictCard"
                   />
-                  <p className="nameCards">RADEON 600 XT</p>
+                  <p className="nameCards">AMD RYZEN 7700</p>
                 </div>
                 <div className="col-lg-8">
                   <div className="listHD">

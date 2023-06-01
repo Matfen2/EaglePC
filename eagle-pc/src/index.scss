@@ -373,7 +373,7 @@ $thirdColor : darkred;
 }
 
 // GPU
-#nvidia2060Super {
+#nvidia2080Super, #radeon6700XT, #nvidia3070Eagle, #radeon6900XT, #intelI512400F, #amdRyzen5600X, #intelI513600K, #amdRyzen7700{
     .modal-dialog {
         height: 600px;
         max-width: 1400px;
@@ -383,6 +383,18 @@ $thirdColor : darkred;
             background-repeat: no-repeat;
             background-image: url('./data/gpuBackground.png');
             .modal-body {
+                #btnCloseCards {
+                    position: relative;
+                    top: 2%;
+                    left: 98%;
+                    font-size: 1.6em;
+                    color: $firstColor;
+                    border: transparent;
+                    background: transparent;
+                    &:hover {
+                        color: $thirdColor;
+                    }
+                }
                 .row {
                     .col-lg-4 {
                         .img-fluid {
@@ -393,7 +405,84 @@ $thirdColor : darkred;
                         .nameCards {
                             font-size: 1.4em;
                             text-align: center;
+                            color: $firstColor;
                             font-family: KGBlankSpaceSolid;
+                        }
+                    }
+                    .col-lg-8 {
+                        .listHD {
+                            text-align: center;
+                            #btnResolution {
+                                font-size: 1.2em;
+                                margin-left: 120px;
+                                color: $firstColor;
+                                margin-right: 120px;
+                                border: transparent;
+                                background: transparent;
+                                font-family: KGBlankSpaceSolid;
+                                &:hover {
+                                    color: $thirdColor;
+                                }
+                            }
+                        }
+                        .table-responsive-lg {
+                            table {
+                                margin-top: 20px;
+                                thead {
+                                    .img-fluid {
+                                        height: 120px;
+                                        max-width: 250px;
+                                    }
+                                }
+                                tbody {
+                                    margin-left: -30px;
+                                    tr {
+                                        line-height: 85px;
+                                        th {
+                                            font-size: 1.2em;
+                                            text-align: center;
+                                            letter-spacing: 2px;
+                                            font-family: KGBlankSpaceSolid;
+                                        }
+                                        td {
+                                            text-align: center;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .cardBuy {
+                            margin: 20px auto;
+                            text-align: center;
+                            #btnBuy {
+                                padding: 5px;
+                                font-size: 1.1em;
+                                color: $firstColor;
+                                margin-right: 20px;
+                                border-radius: 40px;
+                                background: transparent;
+                                border: 1px solid $firstColor;
+                                font-family: KGBlankSpaceSolid;
+                                &:hover {
+                                    background-color: $secondColor;
+                                }
+                            }
+                            #btnBenchmark {
+                                padding: 5px;
+                                margin-left: 20px;
+                                font-size: 1.1em;
+                                border-radius: 40px;
+                                background: transparent;
+                                border: 1px solid $firstColor;
+                                font-family: KGBlankSpaceSolid;
+                                a {
+                                    color: $firstColor;
+                                    text-decoration: none;
+                                }
+                                &:hover {
+                                    background-color: $secondColor;
+                                }
+                            }
                         }
                     }
                 }

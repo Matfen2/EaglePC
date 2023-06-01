@@ -5,6 +5,7 @@ import Offcanvas from './Offcanvas'
 import Cards from './Cards'
 import Contact from './Contact'
 import Gpu from './GPU'
+import Cpu from './CPU'
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/js/bootstrap.bundle.js";
 
@@ -17,6 +18,7 @@ export default function App() {
       <Cards />
       <Contact />
       <Gpu />
+      <Cpu />
     </div>
   );
 }
