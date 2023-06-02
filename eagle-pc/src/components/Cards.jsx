@@ -37,7 +37,7 @@ export default function Cards() {
               <div className="card" data-bs-toggle="modal" data-bs-target="#amdRyzen5600X">
                 <div className="card-body">
                   <img src={cpuTwo} className="img-fluid w-100" alt="pictCPU" />
-                  <p className="titleCard">AMD RYZEN 5600X</p>
+                  <p className="titleCard">AMD RYZEN 5 5600X</p>
                 </div>
               </div>
             </div>
@@ -54,14 +54,14 @@ export default function Cards() {
               </div>
             </div>
             <div className="col-lg-3 cpu">
-              <div className="card" data-bs-toggle="modal" data-bs-target="#amdRyzen7700">
+              <div className="card" data-bs-toggle="modal" data-bs-target="#amd7Ryzen7700X">
                 <div className="card-body">
                   <img
                     src={cpuFour}
                     className="img-fluid w-100"
                     alt="pictCPU"
                   />
-                  <p className="titleCard">AMD RYZEN 7700</p>
+                  <p className="titleCard">AMD RYZEN 7 7700X</p>
                 </div>
               </div>
             </div>

@@ -228,7 +228,7 @@ export default function CpuCards() {
                       ACHETER
                     </button>
                     <button type="button" id="btnBenchmark">
-                      <a href="https://www.youtube.com/watch?v=Fj-R8l776yM">
+                      <a href="https://www.youtube.com/watch?v=Edi_HFN2hi0">
                         VOIR LE BENCHMARK
                       </a>
                     </button>
@@ -322,21 +322,21 @@ export default function CpuCards() {
                         <tbody>
                           <tr>
                             <th scope="row">Temp.</th>
-                            <td>64°C</td>
-                            <td>62°C</td>
-                            <td>66°C</td>
+                            <td>54°C</td>
+                            <td>52°C</td>
+                            <td>56°C</td>
                           </tr>
                           <tr>
                             <th scope="row">Watt</th>
-                            <td>241-245W</td>
-                            <td>207-215W</td>
-                            <td>243-248W</td>
+                            <td>161-166W</td>
+                            <td>176-180W</td>
+                            <td>207-213W</td>
                           </tr>
                           <tr>
                             <th scope="row">FPS</th>
-                            <td>78 FPS</td>
-                            <td>102 FPS</td>
-                            <td>200 FPS</td>
+                            <td>141 FPS</td>
+                            <td>94 FPS</td>
+                            <td>244 FPS</td>
                           </tr>
                         </tbody>
                       </table>
@@ -374,21 +374,21 @@ export default function CpuCards() {
                         <tbody>
                           <tr>
                             <th scope="row">Temp.</th>
-                            <td>65°C</td>
-                            <td>66°C</td>
-                            <td>66°C</td>
+                            <td>56°C</td>
+                            <td>53°C</td>
+                            <td>58°C</td>
                           </tr>
                           <tr>
                             <th scope="row">Watt</th>
-                            <td>244-252W</td>
-                            <td>233-243W</td>
-                            <td>242-250W</td>
+                            <td>176-184W</td>
+                            <td>178-184W</td>
+                            <td>209-216W</td>
                           </tr>
                           <tr>
                             <th scope="row">FPS</th>
-                            <td>63 FPS</td>
-                            <td>65 FPS</td>
-                            <td>156 FPS</td>
+                            <td>103 FPS</td>
+                            <td>57 FPS</td>
+                            <td>200 FPS</td>
                           </tr>
                         </tbody>
                       </table>
@@ -426,21 +426,21 @@ export default function CpuCards() {
                         <tbody>
                           <tr>
                             <th scope="row">Temp.</th>
-                            <td>65°C</td>
-                            <td>66°C</td>
-                            <td>64°C</td>
+                            <td>57°C</td>
+                            <td>54°C</td>
+                            <td>60°C</td>
                           </tr>
                           <tr>
                             <th scope="row">Watt</th>
-                            <td>243-250W</td>
-                            <td>240-248W</td>
-                            <td>243-252W</td>
+                            <td>180-186W</td>
+                            <td>180-185W</td>
+                            <td>212-218W</td>
                           </tr>
                           <tr>
                             <th scope="row">FPS</th>
-                            <td>41 FPS</td>
-                            <td>35 FPS</td>
-                            <td>85 FPS</td>
+                            <td>62 FPS</td>
+                            <td>34 FPS</td>
+                            <td>159 FPS</td>
                           </tr>
                         </tbody>
                       </table>
@@ -451,7 +451,7 @@ export default function CpuCards() {
                       ACHETER
                     </button>
                     <button type="button" id="btnBenchmark">
-                      <a href="https://www.youtube.com/watch?v=Fj-R8l776yM">
+                      <a href="https://www.youtube.com/watch?v=1w8w-luLN8o&t=566s">
                         VOIR LE BENCHMARK
                       </a>
                     </button>
@@ -545,21 +545,21 @@ export default function CpuCards() {
                         <tbody>
                           <tr>
                             <th scope="row">Temp.</th>
+                            <td>63°C</td>
                             <td>64°C</td>
-                            <td>62°C</td>
-                            <td>66°C</td>
+                            <td>63°C</td>
                           </tr>
                           <tr>
                             <th scope="row">Watt</th>
-                            <td>241-245W</td>
-                            <td>207-215W</td>
-                            <td>243-248W</td>
+                            <td>228-238W</td>
+                            <td>204-209W</td>
+                            <td>234-237W</td>
                           </tr>
                           <tr>
                             <th scope="row">FPS</th>
-                            <td>78 FPS</td>
-                            <td>102 FPS</td>
-                            <td>200 FPS</td>
+                            <td>89 FPS</td>
+                            <td>70 FPS</td>
+                            <td>232 FPS</td>
                           </tr>
                         </tbody>
                       </table>
@@ -597,21 +597,21 @@ export default function CpuCards() {
                         <tbody>
                           <tr>
                             <th scope="row">Temp.</th>
+                            <td>63°C</td>
                             <td>65°C</td>
-                            <td>66°C</td>
-                            <td>66°C</td>
+                            <td>63°C</td>
                           </tr>
                           <tr>
                             <th scope="row">Watt</th>
-                            <td>244-252W</td>
-                            <td>233-243W</td>
-                            <td>242-250W</td>
+                            <td>233-234W</td>
+                            <td>212-217W</td>
+                            <td>225-238W</td>
                           </tr>
                           <tr>
                             <th scope="row">FPS</th>
-                            <td>63 FPS</td>
-                            <td>65 FPS</td>
-                            <td>156 FPS</td>
+                            <td>71 FPS</td>
+                            <td>50 FPS</td>
+                            <td>189 FPS</td>
                           </tr>
                         </tbody>
                       </table>
@@ -649,21 +649,21 @@ export default function CpuCards() {
                         <tbody>
                           <tr>
                             <th scope="row">Temp.</th>
-                            <td>65°C</td>
+                            <td>63°C</td>
                             <td>66°C</td>
-                            <td>64°C</td>
+                            <td>63°C</td>
                           </tr>
                           <tr>
                             <th scope="row">Watt</th>
-                            <td>243-250W</td>
-                            <td>240-248W</td>
-                            <td>243-252W</td>
+                            <td>235-238W</td>
+                            <td>211-219W</td>
+                            <td>233-237W</td>
                           </tr>
                           <tr>
                             <th scope="row">FPS</th>
-                            <td>41 FPS</td>
-                            <td>35 FPS</td>
-                            <td>85 FPS</td>
+                            <td>79 FPS</td>
+                            <td>34 FPS</td>
+                            <td>94 FPS</td>
                           </tr>
                         </tbody>
                       </table>
@@ -674,7 +674,7 @@ export default function CpuCards() {
                       ACHETER
                     </button>
                     <button type="button" id="btnBenchmark">
-                      <a href="https://www.youtube.com/watch?v=Fj-R8l776yM">
+                      <a href="https://www.youtube.com/watch?v=_SvU-hNRsz0">
                         VOIR LE BENCHMARK
                       </a>
                     </button>
@@ -768,21 +768,21 @@ export default function CpuCards() {
                         <tbody>
                           <tr>
                             <th scope="row">Temp.</th>
-                            <td>64°C</td>
-                            <td>62°C</td>
+                            <td>65°C</td>
+                            <td>67°C</td>
                             <td>66°C</td>
                           </tr>
                           <tr>
                             <th scope="row">Watt</th>
-                            <td>241-245W</td>
-                            <td>207-215W</td>
-                            <td>243-248W</td>
+                            <td>265-278W</td>
+                            <td>270-276W</td>
+                            <td>281W</td>
                           </tr>
                           <tr>
                             <th scope="row">FPS</th>
-                            <td>78 FPS</td>
-                            <td>102 FPS</td>
-                            <td>200 FPS</td>
+                            <td>104 FPS</td>
+                            <td>109 FPS</td>
+                            <td>330 FPS</td>
                           </tr>
                         </tbody>
                       </table>
@@ -820,21 +820,21 @@ export default function CpuCards() {
                         <tbody>
                           <tr>
                             <th scope="row">Temp.</th>
-                            <td>65°C</td>
                             <td>66°C</td>
-                            <td>66°C</td>
+                            <td>67°C</td>
+                            <td>68°C</td>
                           </tr>
                           <tr>
                             <th scope="row">Watt</th>
-                            <td>244-252W</td>
-                            <td>233-243W</td>
-                            <td>242-250W</td>
+                            <td>281W</td>
+                            <td>281W</td>
+                            <td>281W</td>
                           </tr>
                           <tr>
                             <th scope="row">FPS</th>
-                            <td>63 FPS</td>
-                            <td>65 FPS</td>
-                            <td>156 FPS</td>
+                            <td>87 FPS</td>
+                            <td>75 FPS</td>
+                            <td>264 FPS</td>
                           </tr>
                         </tbody>
                       </table>
@@ -872,21 +872,21 @@ export default function CpuCards() {
                         <tbody>
                           <tr>
                             <th scope="row">Temp.</th>
-                            <td>65°C</td>
-                            <td>66°C</td>
-                            <td>64°C</td>
+                            <td>67°C</td>
+                            <td>68°C</td>
+                            <td>67°C</td>
                           </tr>
                           <tr>
                             <th scope="row">Watt</th>
-                            <td>243-250W</td>
-                            <td>240-248W</td>
-                            <td>243-252W</td>
+                            <td>281W</td>
+                            <td>281W</td>
+                            <td>281W</td>
                           </tr>
                           <tr>
                             <th scope="row">FPS</th>
-                            <td>41 FPS</td>
-                            <td>35 FPS</td>
-                            <td>85 FPS</td>
+                            <td>58 FPS</td>
+                            <td>37 FPS</td>
+                            <td>154 FPS</td>
                           </tr>
                         </tbody>
                       </table>
@@ -897,7 +897,7 @@ export default function CpuCards() {
                       ACHETER
                     </button>
                     <button type="button" id="btnBenchmark">
-                      <a href="https://www.youtube.com/watch?v=Fj-R8l776yM">
+                      <a href="https://www.youtube.com/watch?v=zH7vQmitc_M&t=833s">
                         VOIR LE BENCHMARK
                       </a>
                     </button>

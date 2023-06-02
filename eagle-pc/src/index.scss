@@ -377,7 +377,7 @@ $thirdColor : darkred;
 }
 
 // GPU/CPU
-#nvidia2080Super, #radeon6700XT, #nvidia3070Eagle, #radeon6900XT, #intelI512400F, #amdRyzen5600X, #intelI513600K, #amdRyzen7700{
+#nvidia2080Super, #radeon6700XT, #nvidia3070Eagle, #radeon6900XT, #intelI512400F, #amdRyzen5600X, #intelI513600K, #amd7Ryzen7700X {
     .modal-dialog {
         height: 600px;
         max-width: 1400px;
@@ -459,6 +459,7 @@ $thirdColor : darkred;
                                         }
                                         td {
                                             text-align: center;
+                                            font-family: KGBlankSpaceSolid;
                                         }
                                     }
                                 }
