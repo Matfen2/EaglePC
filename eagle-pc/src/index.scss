@@ -216,7 +216,8 @@ $thirdColor : darkred;
                 .card {
                     text-align: center;
                     height: 250px;
-                    width: 260px;
+                    width: 100%;
+                    max-width: 260px;
                     background-color: #050801;
                     color: #03e9f4;
                     font-weight: bold;
@@ -334,6 +335,7 @@ $thirdColor : darkred;
     }
     }
     .footer {
+        width: 100%;
         padding-top: 40px;
         @include flex (row);
         align-items: center;
@@ -355,7 +357,6 @@ $thirdColor : darkred;
             font-size: 1.6em;
             font-weight: bold;
             font-family: nulshock;
-            margin-left: 120px;
         }
         .listSocial {
             column-gap: 60px;
@@ -414,23 +415,31 @@ $thirdColor : darkred;
                     }
                     .col-lg-8 {
                         .listHD {
+                            margin-bottom: 10px;
                             text-align: center;
-                            #btnResolution {
-                                font-size: 1.2em;
-                                margin-left: 120px;
-                                color: $firstColor;
-                                margin-right: 120px;
-                                border: transparent;
-                                background: transparent;
-                                font-family: KGBlankSpaceSolid;
-                                &:hover {
-                                    color: $thirdColor;
+                            justify-content: center;
+                            .row {
+                                text-align: center;
+                                justify-content: center;
+                                .col-lg-4 {
+                                    #btnResolution {
+                                        font-size: 1.2em;
+                                        
+                                        color: $firstColor;
+                                        
+                                        border: transparent;
+                                        background: transparent;
+                                        font-family: KGBlankSpaceSolid;
+                                        &:hover {
+                                            color: $thirdColor;
+                                        }
+                                    }
                                 }
                             }
                         }
-                        .table-responsive-lg {
+                        .table-responsive {
                             table {
-                                margin-top: 20px;
+                                height: 420px;
                                 thead {
                                     .img-fluid {
                                         height: 120px;
@@ -833,6 +842,25 @@ $thirdColor : darkred;
 
 // MEDIA QUERRY
 @media screen and (max-width: 1588px) {
+    .firstShow {
+        .listFree {
+            .row {
+                .col-lg-6 {
+                    #firstOne {
+                        height: 400px;
+                    }
+                    #firstTwo {
+                        margin-top: -140px;
+                        margin-left: 10px;
+                        height: 750px;
+                    }
+                }
+            }
+            #btnBuyCard {
+                margin: 10px auto;
+            }
+        }
+    }
     .thirdShow {
         .downloadSoftwareOne {
             font-size: 2.0em;
@@ -885,7 +913,7 @@ $thirdColor : darkred;
                     }
                     #firstTwo {
                         margin-top: -140px;
-                        margin-left: 80px;
+                        margin-left: -60px;
                         height: 750px;
                     }
                 }
@@ -922,6 +950,7 @@ $thirdColor : darkred;
             }
         }
     }
+
     #youContactMe {
         .modal-dialog {
             max-width: 400px;
@@ -955,6 +984,52 @@ $thirdColor : darkred;
                         .contactInfo {
                             margin-top: 10px;
                             margin-right: 25px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #nvidia2080Super, #radeon6700XT, #nvidia3070Eagle, #radeon6900XT, #intelI512400F, #amdRyzen5600X, #intelI513600K, #amdRyzen7700 {
+        .modal-dialog {
+            max-width: 450px;
+            height: 240px;
+            .modal-content {
+                .modal-body {
+                    #btnCloseCards {
+                        position: relative;
+                        top: 0%;
+                        left: 96%;
+                    }
+                    .row {
+                        .col-lg-4 {
+                            .img-fluid {
+                                height: 200px;
+                            }
+                        }
+                        .col-lg-8 {
+                            .listHD {
+                                margin-bottom: 15px;
+                                .row {
+                                    text-align: center;
+                                }
+                                
+                            }
+                            .table-responsive {
+                                table {
+                                    padding: 15px auto;
+                                    height: 250px;
+                                    thead {
+                                        th {
+                                            .img-fluid {
+                                                height: 100px;
+                                                max-width: 120px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
                         }
                     }
                 }
@@ -1047,6 +1122,125 @@ $thirdColor : darkred;
         } 
         .showSoftware {
             margin-top: -110px;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+   #nvidia2080Super, #radeon6700XT, #nvidia3070Eagle, #radeon6900XT, #intelI512400F, #amdRyzen5600X, #intelI513600K, #amdRyzen7700{
+    .modal-dialog {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        height: 250px;
+        transform: translate(-50%, -50%);
+        .modal-content {
+                .modal-body {
+                    #btnCloseCards {
+                        position: relative;
+                        top: 0%;
+                        left: 96%;
+                    }
+                    .row {
+                        .col-lg-4 {
+                            .img-fluid {
+                                height: 200px;
+                            }
+                        }
+                        .col-lg-8 {
+                            .listHD {
+                                justify-content: space-between;
+                                .row {
+                                    justify-content: space-between;
+                                }
+                            }
+                            .table-responsive {
+                                table {
+                                    padding: 15px auto;
+                                    height: 150px;
+                                    thead {
+                                        th {
+                                            .img-fluid {
+                                                height: 80px;
+                                                max-width: 120px;
+                                            }
+                                        }
+                                    }
+                                    tbody {
+                                        tr {
+                                            th {
+                                                font-size: 1.0em;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .cardBuy {
+                                margin-top: -8px;
+                            }
+                        }
+                    }
+                }
+            }
+    }
+    }
+}
+
+@media screen and (max-width: 531px) {
+    .cardBackground {
+        .footer {
+            justify-content: space-between;
+            #btnContact {
+                font-size: 1.1em;
+                margin-left: 40px;
+            }
+            .copyright {
+                display: none;
+            }
+            .listSocial {
+                column-gap: 20%;
+                margin-right: 50px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .Offers {
+        .listOffers {
+            .row {
+                margin-right: 40px;
+                .col-lg-4 {
+                    .card {
+                        max-width: 220px;
+                    }
+                }
+            }
+        }
+    }
+
+    .cardBackground {
+        .typesCards {
+            .row {
+                #btnCards {
+                    font-size: 1.5em;
+                }
+            }
+        }
+        .listCard {
+            .row {
+                .cpu, .gpu {
+                    .card {
+                        margin-left: -20px;
+                        .card-body {
+                            .img-fluid {
+                                height: 270px;
+                                max-width: 320px;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }

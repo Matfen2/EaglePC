@@ -17,7 +17,10 @@ export default function CpuCards() {
   return (
     <div>
       <div className="modal fade" id="intelI512400F" tabIndex="-1">
-        <div className="modal-dialog modal-dialog-centered">
+        <div
+          className="modal-dialog modal-dialog-centered"
+          style={{ width: "100%" }}
+        >
           <div className="modal-content">
             <div className="modal-body">
               <button type="button" id="btnCloseCards" data-bs-dismiss="modal">
@@ -34,31 +37,39 @@ export default function CpuCards() {
                 </div>
                 <div className="col-lg-8">
                   <div className="listHD">
-                    <button
-                      type="button"
-                      id="btnResolution"
-                      onClick={() => setGraphics(0)}
-                    >
-                      1080p
-                    </button>
-                    <button
-                      type="button"
-                      id="btnResolution"
-                      onClick={() => setGraphics(1)}
-                    >
-                      1440p
-                    </button>
-                    <button
-                      type="button"
-                      id="btnResolution"
-                      onClick={() => setGraphics(2)}
-                    >
-                      4K
-                    </button>
+                    <div className="row">
+                      <div className="col-lg-4 col-md-4 col-sm-4">
+                        <button
+                          type="button"
+                          id="btnResolution"
+                          onClick={() => setGraphics(0)}
+                        >
+                          1080p
+                        </button>
+                      </div>
+                      <div className="col-lg-4 col-md-4 col-sm-4">
+                        <button
+                          type="button"
+                          id="btnResolution"
+                          onClick={() => setGraphics(1)}
+                        >
+                          1440p
+                        </button>
+                      </div>
+                      <div className="col-lg-4 col-md-4 col-sm-4">
+                        <button
+                          type="button"
+                          id="btnResolution"
+                          onClick={() => setGraphics(2)}
+                        >
+                          4K
+                        </button>
+                      </div>
+                    </div>
                   </div>
                   {graphics === 0 && (
-                    <div className="table-responsive-lg">
-                      <table className="table table-bordered table-transparent">
+                    <div className="table-responsive">
+                      <table className="table table-borderless table-transparent">
                         <thead>
                           <tr>
                             <th scope="col"></th>
@@ -109,8 +120,8 @@ export default function CpuCards() {
                     </div>
                   )}
                   {graphics === 1 && (
-                    <div className="table-responsive-lg">
-                      <table className="table table-bordered table-transparent">
+                    <div className="table-responsive">
+                      <table className="table table-borderless table-transparent">
                         <thead>
                           <tr>
                             <th scope="col"></th>
@@ -161,8 +172,8 @@ export default function CpuCards() {
                     </div>
                   )}
                   {graphics === 2 && (
-                    <div className="table-responsive-lg">
-                      <table className="table table-bordered table-transparent">
+                    <div className="table-responsive">
+                      <table className="table table-borderless table-transparent">
                         <thead>
                           <tr>
                             <th scope="col"></th>
@@ -229,7 +240,10 @@ export default function CpuCards() {
         </div>
       </div>
       <div className="modal fade" id="amdRyzen5600X" tabIndex="-1">
-        <div className="modal-dialog modal-dialog-centered">
+        <div
+          className="modal-dialog modal-dialog-centered"
+          style={{ width: "100%" }}
+        >
           <div className="modal-content">
             <div className="modal-body">
               <button type="button" id="btnCloseCards" data-bs-dismiss="modal">
@@ -246,31 +260,39 @@ export default function CpuCards() {
                 </div>
                 <div className="col-lg-8">
                   <div className="listHD">
-                    <button
-                      type="button"
-                      id="btnResolution"
-                      onClick={() => setGraphics(3)}
-                    >
-                      1080p
-                    </button>
-                    <button
-                      type="button"
-                      id="btnResolution"
-                      onClick={() => setGraphics(4)}
-                    >
-                      1440p
-                    </button>
-                    <button
-                      type="button"
-                      id="btnResolution"
-                      onClick={() => setGraphics(5)}
-                    >
-                      4K
-                    </button>
+                    <div className="row">
+                      <div className="col-lg-4 col-md-4 col-sm-4">
+                        <button
+                          type="button"
+                          id="btnResolution"
+                          onClick={() => setGraphics(0)}
+                        >
+                          1080p
+                        </button>
+                      </div>
+                      <div className="col-lg-4 col-md-4 col-sm-4">
+                        <button
+                          type="button"
+                          id="btnResolution"
+                          onClick={() => setGraphics(1)}
+                        >
+                          1440p
+                        </button>
+                      </div>
+                      <div className="col-lg-4 col-md-4 col-sm-4">
+                        <button
+                          type="button"
+                          id="btnResolution"
+                          onClick={() => setGraphics(2)}
+                        >
+                          4K
+                        </button>
+                      </div>
+                    </div>
                   </div>
-                  {graphics === 3 && (
-                    <div className="table-responsive-lg">
-                      <table className="table table-bordered table-transparent">
+                  {graphics === 0 && (
+                    <div className="table-responsive">
+                      <table className="table table-borderless table-transparent">
                         <thead>
                           <tr>
                             <th scope="col"></th>
@@ -320,9 +342,9 @@ export default function CpuCards() {
                       </table>
                     </div>
                   )}
-                  {graphics === 4 && (
-                    <div className="table-responsive-lg">
-                      <table className="table table-bordered table-transparent">
+                  {graphics === 1 && (
+                    <div className="table-responsive">
+                      <table className="table table-borderless table-transparent">
                         <thead>
                           <tr>
                             <th scope="col"></th>
@@ -372,9 +394,9 @@ export default function CpuCards() {
                       </table>
                     </div>
                   )}
-                  {graphics === 5 && (
-                    <div className="table-responsive-lg">
-                      <table className="table table-bordered table-transparent">
+                  {graphics === 2 && (
+                    <div className="table-responsive">
+                      <table className="table table-borderless table-transparent">
                         <thead>
                           <tr>
                             <th scope="col"></th>
@@ -441,7 +463,10 @@ export default function CpuCards() {
         </div>
       </div>
       <div className="modal fade" id="intelI513600K" tabIndex="-1">
-        <div className="modal-dialog modal-dialog-centered">
+        <div
+          className="modal-dialog modal-dialog-centered"
+          style={{ width: "100%" }}
+        >
           <div className="modal-content">
             <div className="modal-body">
               <button type="button" id="btnCloseCards" data-bs-dismiss="modal">
@@ -458,31 +483,39 @@ export default function CpuCards() {
                 </div>
                 <div className="col-lg-8">
                   <div className="listHD">
-                    <button
-                      type="button"
-                      id="btnResolution"
-                      onClick={() => setGraphics(6)}
-                    >
-                      1080p
-                    </button>
-                    <button
-                      type="button"
-                      id="btnResolution"
-                      onClick={() => setGraphics(7)}
-                    >
-                      1440p
-                    </button>
-                    <button
-                      type="button"
-                      id="btnResolution"
-                      onClick={() => setGraphics(8)}
-                    >
-                      4K
-                    </button>
+                    <div className="row">
+                      <div className="col-lg-4 col-md-4 col-sm-4">
+                        <button
+                          type="button"
+                          id="btnResolution"
+                          onClick={() => setGraphics(0)}
+                        >
+                          1080p
+                        </button>
+                      </div>
+                      <div className="col-lg-4 col-md-4 col-sm-4">
+                        <button
+                          type="button"
+                          id="btnResolution"
+                          onClick={() => setGraphics(1)}
+                        >
+                          1440p
+                        </button>
+                      </div>
+                      <div className="col-lg-4 col-md-4 col-sm-4">
+                        <button
+                          type="button"
+                          id="btnResolution"
+                          onClick={() => setGraphics(2)}
+                        >
+                          4K
+                        </button>
+                      </div>
+                    </div>
                   </div>
-                  {graphics === 6 && (
-                    <div className="table-responsive-lg">
-                      <table className="table table-bordered table-transparent">
+                  {graphics === 0 && (
+                    <div className="table-responsive">
+                      <table className="table table-borderless table-transparent">
                         <thead>
                           <tr>
                             <th scope="col"></th>
@@ -532,9 +565,9 @@ export default function CpuCards() {
                       </table>
                     </div>
                   )}
-                  {graphics === 7 && (
-                    <div className="table-responsive-lg">
-                      <table className="table table-bordered table-transparent">
+                  {graphics === 1 && (
+                    <div className="table-responsive">
+                      <table className="table table-borderless table-transparent">
                         <thead>
                           <tr>
                             <th scope="col"></th>
@@ -584,9 +617,9 @@ export default function CpuCards() {
                       </table>
                     </div>
                   )}
-                  {graphics === 8 && (
-                    <div className="table-responsive-lg">
-                      <table className="table table-bordered table-transparent">
+                  {graphics === 2 && (
+                    <div className="table-responsive">
+                      <table className="table table-borderless table-transparent">
                         <thead>
                           <tr>
                             <th scope="col"></th>
@@ -653,7 +686,10 @@ export default function CpuCards() {
         </div>
       </div>
       <div className="modal fade" id="amdRyzen7700" tabIndex="-1">
-        <div className="modal-dialog modal-dialog-centered">
+        <div
+          className="modal-dialog modal-dialog-centered"
+          style={{ width: "100%" }}
+        >
           <div className="modal-content">
             <div className="modal-body">
               <button type="button" id="btnCloseCards" data-bs-dismiss="modal">
@@ -670,31 +706,39 @@ export default function CpuCards() {
                 </div>
                 <div className="col-lg-8">
                   <div className="listHD">
-                    <button
-                      type="button"
-                      id="btnResolution"
-                      onClick={() => setGraphics(6)}
-                    >
-                      1080p
-                    </button>
-                    <button
-                      type="button"
-                      id="btnResolution"
-                      onClick={() => setGraphics(7)}
-                    >
-                      1440p
-                    </button>
-                    <button
-                      type="button"
-                      id="btnResolution"
-                      onClick={() => setGraphics(8)}
-                    >
-                      4K
-                    </button>
+                    <div className="row">
+                      <div className="col-lg-4 col-md-4 col-sm-4">
+                        <button
+                          type="button"
+                          id="btnResolution"
+                          onClick={() => setGraphics(0)}
+                        >
+                          1080p
+                        </button>
+                      </div>
+                      <div className="col-lg-4 col-md-4 col-sm-4">
+                        <button
+                          type="button"
+                          id="btnResolution"
+                          onClick={() => setGraphics(1)}
+                        >
+                          1440p
+                        </button>
+                      </div>
+                      <div className="col-lg-4 col-md-4 col-sm-4">
+                        <button
+                          type="button"
+                          id="btnResolution"
+                          onClick={() => setGraphics(2)}
+                        >
+                          4K
+                        </button>
+                      </div>
+                    </div>
                   </div>
-                  {graphics === 6 && (
-                    <div className="table-responsive-lg">
-                      <table className="table table-bordered table-transparent">
+                  {graphics === 0 && (
+                    <div className="table-responsive">
+                      <table className="table table-borderless table-transparent">
                         <thead>
                           <tr>
                             <th scope="col"></th>
@@ -744,9 +788,9 @@ export default function CpuCards() {
                       </table>
                     </div>
                   )}
-                  {graphics === 7 && (
-                    <div className="table-responsive-lg">
-                      <table className="table table-bordered table-transparent">
+                  {graphics === 1 && (
+                    <div className="table-responsive">
+                      <table className="table table-borderless table-transparent">
                         <thead>
                           <tr>
                             <th scope="col"></th>
@@ -796,9 +840,9 @@ export default function CpuCards() {
                       </table>
                     </div>
                   )}
-                  {graphics === 8 && (
-                    <div className="table-responsive-lg">
-                      <table className="table table-bordered table-transparent">
+                  {graphics === 2 && (
+                    <div className="table-responsive">
+                      <table className="table table-borderless table-transparent">
                         <thead>
                           <tr>
                             <th scope="col"></th>

@@ -181,7 +181,8 @@ body {
 .Offers .listOffers .row .col-lg-4 .card {
   text-align: center;
   height: 250px;
-  width: 260px;
+  width: 100%;
+  max-width: 260px;
   background-color: #050801;
   color: #03e9f4;
   font-weight: bold;
@@ -283,6 +284,7 @@ body {
   opacity: 0.9;
 }
 .cardBackground .footer {
+  width: 100%;
   padding-top: 40px;
   display: flex;
   flex-direction: row;
@@ -306,7 +308,6 @@ body {
   font-size: 1.6em;
   font-weight: bold;
   font-family: nulshock;
-  margin-left: 120px;
 }
 .cardBackground .footer .listSocial {
   -moz-column-gap: 60px;
@@ -358,41 +359,45 @@ body {
   font-family: KGBlankSpaceSolid;
 }
 #nvidia2080Super .modal-dialog .modal-content .modal-body .row .col-lg-8 .listHD, #radeon6700XT .modal-dialog .modal-content .modal-body .row .col-lg-8 .listHD, #nvidia3070Eagle .modal-dialog .modal-content .modal-body .row .col-lg-8 .listHD, #radeon6900XT .modal-dialog .modal-content .modal-body .row .col-lg-8 .listHD, #intelI512400F .modal-dialog .modal-content .modal-body .row .col-lg-8 .listHD, #amdRyzen5600X .modal-dialog .modal-content .modal-body .row .col-lg-8 .listHD, #intelI513600K .modal-dialog .modal-content .modal-body .row .col-lg-8 .listHD, #amdRyzen7700 .modal-dialog .modal-content .modal-body .row .col-lg-8 .listHD {
+  margin-bottom: 10px;
   text-align: center;
+  justify-content: center;
 }
-#nvidia2080Super .modal-dialog .modal-content .modal-body .row .col-lg-8 .listHD #btnResolution, #radeon6700XT .modal-dialog .modal-content .modal-body .row .col-lg-8 .listHD #btnResolution, #nvidia3070Eagle .modal-dialog .modal-content .modal-body .row .col-lg-8 .listHD #btnResolution, #radeon6900XT .modal-dialog .modal-content .modal-body .row .col-lg-8 .listHD #btnResolution, #intelI512400F .modal-dialog .modal-content .modal-body .row .col-lg-8 .listHD #btnResolution, #amdRyzen5600X .modal-dialog .modal-content .modal-body .row .col-lg-8 .listHD #btnResolution, #intelI513600K .modal-dialog .modal-content .modal-body .row .col-lg-8 .listHD #btnResolution, #amdRyzen7700 .modal-dialog .modal-content .modal-body .row .col-lg-8 .listHD #btnResolution {
+#nvidia2080Super .modal-dialog .modal-content .modal-body .row .col-lg-8 .listHD .row, #radeon6700XT .modal-dialog .modal-content .modal-body .row .col-lg-8 .listHD .row, #nvidia3070Eagle .modal-dialog .modal-content .modal-body .row .col-lg-8 .listHD .row, #radeon6900XT .modal-dialog .modal-content .modal-body .row .col-lg-8 .listHD .row, #intelI512400F .modal-dialog .modal-content .modal-body .row .col-lg-8 .listHD .row, #amdRyzen5600X .modal-dialog .modal-content .modal-body .row .col-lg-8 .listHD .row, #intelI513600K .modal-dialog .modal-content .modal-body .row .col-lg-8 .listHD .row, #amdRyzen7700 .modal-dialog .modal-content .modal-body .row .col-lg-8 .listHD .row {
+  text-align: center;
+  justify-content: center;
+}
+#nvidia2080Super .modal-dialog .modal-content .modal-body .row .col-lg-8 .listHD .row .col-lg-4 #btnResolution, #radeon6700XT .modal-dialog .modal-content .modal-body .row .col-lg-8 .listHD .row .col-lg-4 #btnResolution, #nvidia3070Eagle .modal-dialog .modal-content .modal-body .row .col-lg-8 .listHD .row .col-lg-4 #btnResolution, #radeon6900XT .modal-dialog .modal-content .modal-body .row .col-lg-8 .listHD .row .col-lg-4 #btnResolution, #intelI512400F .modal-dialog .modal-content .modal-body .row .col-lg-8 .listHD .row .col-lg-4 #btnResolution, #amdRyzen5600X .modal-dialog .modal-content .modal-body .row .col-lg-8 .listHD .row .col-lg-4 #btnResolution, #intelI513600K .modal-dialog .modal-content .modal-body .row .col-lg-8 .listHD .row .col-lg-4 #btnResolution, #amdRyzen7700 .modal-dialog .modal-content .modal-body .row .col-lg-8 .listHD .row .col-lg-4 #btnResolution {
   font-size: 1.2em;
-  margin-left: 120px;
   color: azure;
-  margin-right: 120px;
   border: transparent;
   background: transparent;
   font-family: KGBlankSpaceSolid;
 }
-#nvidia2080Super .modal-dialog .modal-content .modal-body .row .col-lg-8 .listHD #btnResolution:hover, #radeon6700XT .modal-dialog .modal-content .modal-body .row .col-lg-8 .listHD #btnResolution:hover, #nvidia3070Eagle .modal-dialog .modal-content .modal-body .row .col-lg-8 .listHD #btnResolution:hover, #radeon6900XT .modal-dialog .modal-content .modal-body .row .col-lg-8 .listHD #btnResolution:hover, #intelI512400F .modal-dialog .modal-content .modal-body .row .col-lg-8 .listHD #btnResolution:hover, #amdRyzen5600X .modal-dialog .modal-content .modal-body .row .col-lg-8 .listHD #btnResolution:hover, #intelI513600K .modal-dialog .modal-content .modal-body .row .col-lg-8 .listHD #btnResolution:hover, #amdRyzen7700 .modal-dialog .modal-content .modal-body .row .col-lg-8 .listHD #btnResolution:hover {
+#nvidia2080Super .modal-dialog .modal-content .modal-body .row .col-lg-8 .listHD .row .col-lg-4 #btnResolution:hover, #radeon6700XT .modal-dialog .modal-content .modal-body .row .col-lg-8 .listHD .row .col-lg-4 #btnResolution:hover, #nvidia3070Eagle .modal-dialog .modal-content .modal-body .row .col-lg-8 .listHD .row .col-lg-4 #btnResolution:hover, #radeon6900XT .modal-dialog .modal-content .modal-body .row .col-lg-8 .listHD .row .col-lg-4 #btnResolution:hover, #intelI512400F .modal-dialog .modal-content .modal-body .row .col-lg-8 .listHD .row .col-lg-4 #btnResolution:hover, #amdRyzen5600X .modal-dialog .modal-content .modal-body .row .col-lg-8 .listHD .row .col-lg-4 #btnResolution:hover, #intelI513600K .modal-dialog .modal-content .modal-body .row .col-lg-8 .listHD .row .col-lg-4 #btnResolution:hover, #amdRyzen7700 .modal-dialog .modal-content .modal-body .row .col-lg-8 .listHD .row .col-lg-4 #btnResolution:hover {
   color: darkred;
 }
-#nvidia2080Super .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive-lg table, #radeon6700XT .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive-lg table, #nvidia3070Eagle .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive-lg table, #radeon6900XT .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive-lg table, #intelI512400F .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive-lg table, #amdRyzen5600X .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive-lg table, #intelI513600K .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive-lg table, #amdRyzen7700 .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive-lg table {
-  margin-top: 20px;
+#nvidia2080Super .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table, #radeon6700XT .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table, #nvidia3070Eagle .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table, #radeon6900XT .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table, #intelI512400F .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table, #amdRyzen5600X .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table, #intelI513600K .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table, #amdRyzen7700 .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table {
+  height: 420px;
 }
-#nvidia2080Super .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive-lg table thead .img-fluid, #radeon6700XT .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive-lg table thead .img-fluid, #nvidia3070Eagle .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive-lg table thead .img-fluid, #radeon6900XT .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive-lg table thead .img-fluid, #intelI512400F .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive-lg table thead .img-fluid, #amdRyzen5600X .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive-lg table thead .img-fluid, #intelI513600K .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive-lg table thead .img-fluid, #amdRyzen7700 .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive-lg table thead .img-fluid {
+#nvidia2080Super .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table thead .img-fluid, #radeon6700XT .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table thead .img-fluid, #nvidia3070Eagle .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table thead .img-fluid, #radeon6900XT .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table thead .img-fluid, #intelI512400F .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table thead .img-fluid, #amdRyzen5600X .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table thead .img-fluid, #intelI513600K .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table thead .img-fluid, #amdRyzen7700 .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table thead .img-fluid {
   height: 120px;
   max-width: 250px;
 }
-#nvidia2080Super .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive-lg table tbody, #radeon6700XT .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive-lg table tbody, #nvidia3070Eagle .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive-lg table tbody, #radeon6900XT .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive-lg table tbody, #intelI512400F .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive-lg table tbody, #amdRyzen5600X .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive-lg table tbody, #intelI513600K .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive-lg table tbody, #amdRyzen7700 .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive-lg table tbody {
+#nvidia2080Super .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table tbody, #radeon6700XT .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table tbody, #nvidia3070Eagle .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table tbody, #radeon6900XT .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table tbody, #intelI512400F .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table tbody, #amdRyzen5600X .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table tbody, #intelI513600K .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table tbody, #amdRyzen7700 .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table tbody {
   margin-left: -30px;
 }
-#nvidia2080Super .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive-lg table tbody tr, #radeon6700XT .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive-lg table tbody tr, #nvidia3070Eagle .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive-lg table tbody tr, #radeon6900XT .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive-lg table tbody tr, #intelI512400F .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive-lg table tbody tr, #amdRyzen5600X .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive-lg table tbody tr, #intelI513600K .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive-lg table tbody tr, #amdRyzen7700 .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive-lg table tbody tr {
+#nvidia2080Super .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table tbody tr, #radeon6700XT .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table tbody tr, #nvidia3070Eagle .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table tbody tr, #radeon6900XT .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table tbody tr, #intelI512400F .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table tbody tr, #amdRyzen5600X .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table tbody tr, #intelI513600K .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table tbody tr, #amdRyzen7700 .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table tbody tr {
   line-height: 85px;
   background-color: transparent;
 }
-#nvidia2080Super .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive-lg table tbody tr th, #radeon6700XT .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive-lg table tbody tr th, #nvidia3070Eagle .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive-lg table tbody tr th, #radeon6900XT .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive-lg table tbody tr th, #intelI512400F .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive-lg table tbody tr th, #amdRyzen5600X .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive-lg table tbody tr th, #intelI513600K .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive-lg table tbody tr th, #amdRyzen7700 .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive-lg table tbody tr th {
+#nvidia2080Super .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table tbody tr th, #radeon6700XT .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table tbody tr th, #nvidia3070Eagle .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table tbody tr th, #radeon6900XT .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table tbody tr th, #intelI512400F .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table tbody tr th, #amdRyzen5600X .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table tbody tr th, #intelI513600K .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table tbody tr th, #amdRyzen7700 .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table tbody tr th {
   font-size: 1.2em;
   text-align: center;
   letter-spacing: 2px;
   font-family: KGBlankSpaceSolid;
 }
-#nvidia2080Super .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive-lg table tbody tr td, #radeon6700XT .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive-lg table tbody tr td, #nvidia3070Eagle .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive-lg table tbody tr td, #radeon6900XT .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive-lg table tbody tr td, #intelI512400F .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive-lg table tbody tr td, #amdRyzen5600X .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive-lg table tbody tr td, #intelI513600K .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive-lg table tbody tr td, #amdRyzen7700 .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive-lg table tbody tr td {
+#nvidia2080Super .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table tbody tr td, #radeon6700XT .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table tbody tr td, #nvidia3070Eagle .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table tbody tr td, #radeon6900XT .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table tbody tr td, #intelI512400F .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table tbody tr td, #amdRyzen5600X .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table tbody tr td, #intelI513600K .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table tbody tr td, #amdRyzen7700 .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table tbody tr td {
   text-align: center;
 }
 #nvidia2080Super .modal-dialog .modal-content .modal-body .row .col-lg-8 .cardBuy, #radeon6700XT .modal-dialog .modal-content .modal-body .row .col-lg-8 .cardBuy, #nvidia3070Eagle .modal-dialog .modal-content .modal-body .row .col-lg-8 .cardBuy, #radeon6900XT .modal-dialog .modal-content .modal-body .row .col-lg-8 .cardBuy, #intelI512400F .modal-dialog .modal-content .modal-body .row .col-lg-8 .cardBuy, #amdRyzen5600X .modal-dialog .modal-content .modal-body .row .col-lg-8 .cardBuy, #intelI513600K .modal-dialog .modal-content .modal-body .row .col-lg-8 .cardBuy, #amdRyzen7700 .modal-dialog .modal-content .modal-body .row .col-lg-8 .cardBuy {
@@ -741,6 +746,17 @@ body {
 }
 
 @media screen and (max-width: 1588px) {
+  .firstShow .listFree .row .col-lg-6 #firstOne {
+    height: 400px;
+  }
+  .firstShow .listFree .row .col-lg-6 #firstTwo {
+    margin-top: -140px;
+    margin-left: 10px;
+    height: 750px;
+  }
+  .firstShow .listFree #btnBuyCard {
+    margin: 10px auto;
+  }
   .thirdShow .downloadSoftwareOne {
     font-size: 2em;
   }
@@ -778,7 +794,7 @@ body {
   }
   .firstShow .listFree .row .col-lg-6 #firstTwo {
     margin-top: -140px;
-    margin-left: 80px;
+    margin-left: -60px;
     height: 750px;
   }
   .firstShow .listFree #btnBuyCard {
@@ -827,6 +843,32 @@ body {
   #youContactMe .modal-dialog .modal-content .row .col-lg-4 .contactInfo {
     margin-top: 10px;
     margin-right: 25px;
+  }
+  #nvidia2080Super .modal-dialog, #radeon6700XT .modal-dialog, #nvidia3070Eagle .modal-dialog, #radeon6900XT .modal-dialog, #intelI512400F .modal-dialog, #amdRyzen5600X .modal-dialog, #intelI513600K .modal-dialog, #amdRyzen7700 .modal-dialog {
+    max-width: 450px;
+    height: 240px;
+  }
+  #nvidia2080Super .modal-dialog .modal-content .modal-body #btnCloseCards, #radeon6700XT .modal-dialog .modal-content .modal-body #btnCloseCards, #nvidia3070Eagle .modal-dialog .modal-content .modal-body #btnCloseCards, #radeon6900XT .modal-dialog .modal-content .modal-body #btnCloseCards, #intelI512400F .modal-dialog .modal-content .modal-body #btnCloseCards, #amdRyzen5600X .modal-dialog .modal-content .modal-body #btnCloseCards, #intelI513600K .modal-dialog .modal-content .modal-body #btnCloseCards, #amdRyzen7700 .modal-dialog .modal-content .modal-body #btnCloseCards {
+    position: relative;
+    top: 0%;
+    left: 96%;
+  }
+  #nvidia2080Super .modal-dialog .modal-content .modal-body .row .col-lg-4 .img-fluid, #radeon6700XT .modal-dialog .modal-content .modal-body .row .col-lg-4 .img-fluid, #nvidia3070Eagle .modal-dialog .modal-content .modal-body .row .col-lg-4 .img-fluid, #radeon6900XT .modal-dialog .modal-content .modal-body .row .col-lg-4 .img-fluid, #intelI512400F .modal-dialog .modal-content .modal-body .row .col-lg-4 .img-fluid, #amdRyzen5600X .modal-dialog .modal-content .modal-body .row .col-lg-4 .img-fluid, #intelI513600K .modal-dialog .modal-content .modal-body .row .col-lg-4 .img-fluid, #amdRyzen7700 .modal-dialog .modal-content .modal-body .row .col-lg-4 .img-fluid {
+    height: 200px;
+  }
+  #nvidia2080Super .modal-dialog .modal-content .modal-body .row .col-lg-8 .listHD, #radeon6700XT .modal-dialog .modal-content .modal-body .row .col-lg-8 .listHD, #nvidia3070Eagle .modal-dialog .modal-content .modal-body .row .col-lg-8 .listHD, #radeon6900XT .modal-dialog .modal-content .modal-body .row .col-lg-8 .listHD, #intelI512400F .modal-dialog .modal-content .modal-body .row .col-lg-8 .listHD, #amdRyzen5600X .modal-dialog .modal-content .modal-body .row .col-lg-8 .listHD, #intelI513600K .modal-dialog .modal-content .modal-body .row .col-lg-8 .listHD, #amdRyzen7700 .modal-dialog .modal-content .modal-body .row .col-lg-8 .listHD {
+    margin-bottom: 15px;
+  }
+  #nvidia2080Super .modal-dialog .modal-content .modal-body .row .col-lg-8 .listHD .row, #radeon6700XT .modal-dialog .modal-content .modal-body .row .col-lg-8 .listHD .row, #nvidia3070Eagle .modal-dialog .modal-content .modal-body .row .col-lg-8 .listHD .row, #radeon6900XT .modal-dialog .modal-content .modal-body .row .col-lg-8 .listHD .row, #intelI512400F .modal-dialog .modal-content .modal-body .row .col-lg-8 .listHD .row, #amdRyzen5600X .modal-dialog .modal-content .modal-body .row .col-lg-8 .listHD .row, #intelI513600K .modal-dialog .modal-content .modal-body .row .col-lg-8 .listHD .row, #amdRyzen7700 .modal-dialog .modal-content .modal-body .row .col-lg-8 .listHD .row {
+    text-align: center;
+  }
+  #nvidia2080Super .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table, #radeon6700XT .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table, #nvidia3070Eagle .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table, #radeon6900XT .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table, #intelI512400F .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table, #amdRyzen5600X .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table, #intelI513600K .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table, #amdRyzen7700 .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table {
+    padding: 15px auto;
+    height: 250px;
+  }
+  #nvidia2080Super .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table thead th .img-fluid, #radeon6700XT .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table thead th .img-fluid, #nvidia3070Eagle .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table thead th .img-fluid, #radeon6900XT .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table thead th .img-fluid, #intelI512400F .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table thead th .img-fluid, #amdRyzen5600X .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table thead th .img-fluid, #intelI513600K .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table thead th .img-fluid, #amdRyzen7700 .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table thead th .img-fluid {
+    height: 100px;
+    max-width: 120px;
   }
 }
 @media screen and (max-width: 825px) {
@@ -894,6 +936,78 @@ body {
   }
   .thirdShow .showSoftware {
     margin-top: -110px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #nvidia2080Super .modal-dialog, #radeon6700XT .modal-dialog, #nvidia3070Eagle .modal-dialog, #radeon6900XT .modal-dialog, #intelI512400F .modal-dialog, #amdRyzen5600X .modal-dialog, #intelI513600K .modal-dialog, #amdRyzen7700 .modal-dialog {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    height: 250px;
+    transform: translate(-50%, -50%);
+  }
+  #nvidia2080Super .modal-dialog .modal-content .modal-body #btnCloseCards, #radeon6700XT .modal-dialog .modal-content .modal-body #btnCloseCards, #nvidia3070Eagle .modal-dialog .modal-content .modal-body #btnCloseCards, #radeon6900XT .modal-dialog .modal-content .modal-body #btnCloseCards, #intelI512400F .modal-dialog .modal-content .modal-body #btnCloseCards, #amdRyzen5600X .modal-dialog .modal-content .modal-body #btnCloseCards, #intelI513600K .modal-dialog .modal-content .modal-body #btnCloseCards, #amdRyzen7700 .modal-dialog .modal-content .modal-body #btnCloseCards {
+    position: relative;
+    top: 0%;
+    left: 96%;
+  }
+  #nvidia2080Super .modal-dialog .modal-content .modal-body .row .col-lg-4 .img-fluid, #radeon6700XT .modal-dialog .modal-content .modal-body .row .col-lg-4 .img-fluid, #nvidia3070Eagle .modal-dialog .modal-content .modal-body .row .col-lg-4 .img-fluid, #radeon6900XT .modal-dialog .modal-content .modal-body .row .col-lg-4 .img-fluid, #intelI512400F .modal-dialog .modal-content .modal-body .row .col-lg-4 .img-fluid, #amdRyzen5600X .modal-dialog .modal-content .modal-body .row .col-lg-4 .img-fluid, #intelI513600K .modal-dialog .modal-content .modal-body .row .col-lg-4 .img-fluid, #amdRyzen7700 .modal-dialog .modal-content .modal-body .row .col-lg-4 .img-fluid {
+    height: 200px;
+  }
+  #nvidia2080Super .modal-dialog .modal-content .modal-body .row .col-lg-8 .listHD, #radeon6700XT .modal-dialog .modal-content .modal-body .row .col-lg-8 .listHD, #nvidia3070Eagle .modal-dialog .modal-content .modal-body .row .col-lg-8 .listHD, #radeon6900XT .modal-dialog .modal-content .modal-body .row .col-lg-8 .listHD, #intelI512400F .modal-dialog .modal-content .modal-body .row .col-lg-8 .listHD, #amdRyzen5600X .modal-dialog .modal-content .modal-body .row .col-lg-8 .listHD, #intelI513600K .modal-dialog .modal-content .modal-body .row .col-lg-8 .listHD, #amdRyzen7700 .modal-dialog .modal-content .modal-body .row .col-lg-8 .listHD {
+    justify-content: space-between;
+  }
+  #nvidia2080Super .modal-dialog .modal-content .modal-body .row .col-lg-8 .listHD .row, #radeon6700XT .modal-dialog .modal-content .modal-body .row .col-lg-8 .listHD .row, #nvidia3070Eagle .modal-dialog .modal-content .modal-body .row .col-lg-8 .listHD .row, #radeon6900XT .modal-dialog .modal-content .modal-body .row .col-lg-8 .listHD .row, #intelI512400F .modal-dialog .modal-content .modal-body .row .col-lg-8 .listHD .row, #amdRyzen5600X .modal-dialog .modal-content .modal-body .row .col-lg-8 .listHD .row, #intelI513600K .modal-dialog .modal-content .modal-body .row .col-lg-8 .listHD .row, #amdRyzen7700 .modal-dialog .modal-content .modal-body .row .col-lg-8 .listHD .row {
+    justify-content: space-between;
+  }
+  #nvidia2080Super .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table, #radeon6700XT .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table, #nvidia3070Eagle .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table, #radeon6900XT .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table, #intelI512400F .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table, #amdRyzen5600X .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table, #intelI513600K .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table, #amdRyzen7700 .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table {
+    padding: 15px auto;
+    height: 150px;
+  }
+  #nvidia2080Super .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table thead th .img-fluid, #radeon6700XT .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table thead th .img-fluid, #nvidia3070Eagle .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table thead th .img-fluid, #radeon6900XT .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table thead th .img-fluid, #intelI512400F .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table thead th .img-fluid, #amdRyzen5600X .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table thead th .img-fluid, #intelI513600K .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table thead th .img-fluid, #amdRyzen7700 .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table thead th .img-fluid {
+    height: 80px;
+    max-width: 120px;
+  }
+  #nvidia2080Super .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table tbody tr th, #radeon6700XT .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table tbody tr th, #nvidia3070Eagle .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table tbody tr th, #radeon6900XT .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table tbody tr th, #intelI512400F .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table tbody tr th, #amdRyzen5600X .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table tbody tr th, #intelI513600K .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table tbody tr th, #amdRyzen7700 .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table tbody tr th {
+    font-size: 1em;
+  }
+  #nvidia2080Super .modal-dialog .modal-content .modal-body .row .col-lg-8 .cardBuy, #radeon6700XT .modal-dialog .modal-content .modal-body .row .col-lg-8 .cardBuy, #nvidia3070Eagle .modal-dialog .modal-content .modal-body .row .col-lg-8 .cardBuy, #radeon6900XT .modal-dialog .modal-content .modal-body .row .col-lg-8 .cardBuy, #intelI512400F .modal-dialog .modal-content .modal-body .row .col-lg-8 .cardBuy, #amdRyzen5600X .modal-dialog .modal-content .modal-body .row .col-lg-8 .cardBuy, #intelI513600K .modal-dialog .modal-content .modal-body .row .col-lg-8 .cardBuy, #amdRyzen7700 .modal-dialog .modal-content .modal-body .row .col-lg-8 .cardBuy {
+    margin-top: -8px;
+  }
+}
+@media screen and (max-width: 531px) {
+  .cardBackground .footer {
+    justify-content: space-between;
+  }
+  .cardBackground .footer #btnContact {
+    font-size: 1.1em;
+    margin-left: 40px;
+  }
+  .cardBackground .footer .copyright {
+    display: none;
+  }
+  .cardBackground .footer .listSocial {
+    -moz-column-gap: 20%;
+         column-gap: 20%;
+    margin-right: 50px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .Offers .listOffers .row {
+    margin-right: 40px;
+  }
+  .Offers .listOffers .row .col-lg-4 .card {
+    max-width: 220px;
+  }
+  .cardBackground .typesCards .row #btnCards {
+    font-size: 1.5em;
+  }
+  .cardBackground .listCard .row .cpu .card, .cardBackground .listCard .row .gpu .card {
+    margin-left: -20px;
+  }
+  .cardBackground .listCard .row .cpu .card .card-body .img-fluid, .cardBackground .listCard .row .gpu .card .card-body .img-fluid {
+    height: 270px;
+    max-width: 320px;
   }
 }
 @font-face {
