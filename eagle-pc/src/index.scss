@@ -99,7 +99,7 @@ $thirdColor : darkred;
             margin-bottom: -350px;
         }
     }
-    p {
+    .otherHelp {
         text-align: center;
         margin-top: 350px;
         font-size: 1.6em;
@@ -1206,6 +1206,128 @@ $thirdColor : darkred;
     }
 }
 
+@media screen and (max-width: 429px) {
+    .presentSite {
+        .navbar {
+            .navbar-brand {
+                .img-fluid {
+                    height: 120px;
+                    max-width: 180px;
+                }
+            }
+        }
+    }
+
+    .secondShow {
+        .team {
+            font-size: 3.5em;
+            margin-top: 15px;
+        }
+        .overUnder {
+            .img-fluid {
+                height: 445px;
+            }
+        }
+    }
+
+    .thirdShow {
+        .sentenceSoftwares {
+            margin: 20px auto;
+        }
+        .downloadSoftwareOne {
+            font-size: 1.8em;
+            margin-bottom: -30px;
+        }
+        .listSoftware {
+            margin-bottom: 10px;
+            .row {
+                .col-lg-3 {
+                    height: 120px;
+                    .img-fluid {
+                        height: 100px;
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+        .showSoftware {
+            #btnOtherSoftware {
+                width: 200px;
+            }
+        }
+    }
+
+   #nvidia2080Super, #radeon6700XT, #nvidia3070Eagle, #radeon6900XT, #intelI512400F, #amdRyzen5600X, #intelI513600K, #amdRyzen7700{
+        .modal-dialog {
+            max-width: 1000px;
+            .modal-content {
+                    .modal-body {
+                        #btnCloseCards {
+                            position: relative;
+                            top: 3%;
+                            left: 96%;
+                        }
+                        .row {
+                            .col-lg-4 {
+                                .img-fluid {
+                                    display: none;
+                                }
+                            }
+                            .col-lg-8 {
+                                .table-responsive {
+                                    table {
+                                        padding: 15px auto;
+                                        height: 110px;
+                                        thead {
+                                            th {
+                                                .img-fluid {
+                                                    height: 100px;
+                                                    max-width: 130px;
+                                                }
+                                            }
+                                        }
+                                        tbody {
+                                            tr {
+                                                th {
+                                                    font-size: 0.9em;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+        }
+    } 
+
+    #showCanvas {
+        max-width: 270px;
+        height: 220px;
+        .offcanvas-body {
+            .listCanvas {
+                li {
+                    a {
+                        font-size: 1.2em;
+                    }
+                }
+            }
+        }
+        .offcanvas-footer {
+            #btnLogIn {
+                font-size: 0.9em;
+            }
+            .and {
+                font-size: 1.0em;
+            }
+            #btnSignUp {
+                font-size: 0.9em;
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 425px) {
     .Offers {
         .listOffers {
@@ -1241,6 +1363,53 @@ $thirdColor : darkred;
                         }
                     }
                 }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .secondShow {
+        .overUnder {
+            .img-fluid {
+                height: 408px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .secondShow {
+        .overUnder {
+            .img-fluid {
+                height: 348px;
+            }
+        }
+        .otherHelp {
+            font-size: 1.3em;
+        }
+        #btnAstuces {
+           a {
+            font-size: 1.1em;
+           }
+        }
+    }
+
+    .thirdShow {
+        .downloadSoftwareOne {
+            margin-bottom: -40px;
+        }
+        .listSoftware {
+            .row {
+                .col-lg-3 {
+                    height: 120px;
+                    width: 100px;
+                }
+            }
+        }
+        .showSoftware {
+            .otherSoftware {
+                font-size: 1.6em;
             }
         }
     }

@@ -68,7 +68,7 @@ export default function App() {
           <span className="overUnder">
             <img src={overUnder} className="img-fluid w-100" alt="overUnder" />
           </span>
-          <p>d'autres conseils pour améliorer votre confort de votre pc</p>
+          <p className="otherHelp">d'autres conseils pour améliorer votre confort de votre pc</p>
           <button type="button" id="btnAstuces">
             <a href=".help">BESOIN DE CONSEILS</a>
           </button>

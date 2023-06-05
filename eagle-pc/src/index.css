@@ -71,7 +71,7 @@ body {
   height: 540px;
   margin-bottom: -350px;
 }
-.secondShow p {
+.secondShow .otherHelp {
   text-align: center;
   margin-top: 350px;
   font-size: 1.6em;
@@ -993,6 +993,77 @@ body {
     margin-right: 50px;
   }
 }
+@media screen and (max-width: 429px) {
+  .presentSite .navbar .navbar-brand .img-fluid {
+    height: 120px;
+    max-width: 180px;
+  }
+  .secondShow .team {
+    font-size: 3.5em;
+    margin-top: 15px;
+  }
+  .secondShow .overUnder .img-fluid {
+    height: 445px;
+  }
+  .thirdShow .sentenceSoftwares {
+    margin: 20px auto;
+  }
+  .thirdShow .downloadSoftwareOne {
+    font-size: 1.8em;
+    margin-bottom: -30px;
+  }
+  .thirdShow .listSoftware {
+    margin-bottom: 10px;
+  }
+  .thirdShow .listSoftware .row .col-lg-3 {
+    height: 120px;
+  }
+  .thirdShow .listSoftware .row .col-lg-3 .img-fluid {
+    height: 100px;
+    margin-top: 10px;
+  }
+  .thirdShow .showSoftware #btnOtherSoftware {
+    width: 200px;
+  }
+  #nvidia2080Super .modal-dialog, #radeon6700XT .modal-dialog, #nvidia3070Eagle .modal-dialog, #radeon6900XT .modal-dialog, #intelI512400F .modal-dialog, #amdRyzen5600X .modal-dialog, #intelI513600K .modal-dialog, #amdRyzen7700 .modal-dialog {
+    max-width: 1000px;
+  }
+  #nvidia2080Super .modal-dialog .modal-content .modal-body #btnCloseCards, #radeon6700XT .modal-dialog .modal-content .modal-body #btnCloseCards, #nvidia3070Eagle .modal-dialog .modal-content .modal-body #btnCloseCards, #radeon6900XT .modal-dialog .modal-content .modal-body #btnCloseCards, #intelI512400F .modal-dialog .modal-content .modal-body #btnCloseCards, #amdRyzen5600X .modal-dialog .modal-content .modal-body #btnCloseCards, #intelI513600K .modal-dialog .modal-content .modal-body #btnCloseCards, #amdRyzen7700 .modal-dialog .modal-content .modal-body #btnCloseCards {
+    position: relative;
+    top: 3%;
+    left: 96%;
+  }
+  #nvidia2080Super .modal-dialog .modal-content .modal-body .row .col-lg-4 .img-fluid, #radeon6700XT .modal-dialog .modal-content .modal-body .row .col-lg-4 .img-fluid, #nvidia3070Eagle .modal-dialog .modal-content .modal-body .row .col-lg-4 .img-fluid, #radeon6900XT .modal-dialog .modal-content .modal-body .row .col-lg-4 .img-fluid, #intelI512400F .modal-dialog .modal-content .modal-body .row .col-lg-4 .img-fluid, #amdRyzen5600X .modal-dialog .modal-content .modal-body .row .col-lg-4 .img-fluid, #intelI513600K .modal-dialog .modal-content .modal-body .row .col-lg-4 .img-fluid, #amdRyzen7700 .modal-dialog .modal-content .modal-body .row .col-lg-4 .img-fluid {
+    display: none;
+  }
+  #nvidia2080Super .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table, #radeon6700XT .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table, #nvidia3070Eagle .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table, #radeon6900XT .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table, #intelI512400F .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table, #amdRyzen5600X .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table, #intelI513600K .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table, #amdRyzen7700 .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table {
+    padding: 15px auto;
+    height: 110px;
+  }
+  #nvidia2080Super .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table thead th .img-fluid, #radeon6700XT .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table thead th .img-fluid, #nvidia3070Eagle .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table thead th .img-fluid, #radeon6900XT .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table thead th .img-fluid, #intelI512400F .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table thead th .img-fluid, #amdRyzen5600X .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table thead th .img-fluid, #intelI513600K .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table thead th .img-fluid, #amdRyzen7700 .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table thead th .img-fluid {
+    height: 100px;
+    max-width: 130px;
+  }
+  #nvidia2080Super .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table tbody tr th, #radeon6700XT .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table tbody tr th, #nvidia3070Eagle .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table tbody tr th, #radeon6900XT .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table tbody tr th, #intelI512400F .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table tbody tr th, #amdRyzen5600X .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table tbody tr th, #intelI513600K .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table tbody tr th, #amdRyzen7700 .modal-dialog .modal-content .modal-body .row .col-lg-8 .table-responsive table tbody tr th {
+    font-size: 0.9em;
+  }
+  #showCanvas {
+    max-width: 270px;
+    height: 220px;
+  }
+  #showCanvas .offcanvas-body .listCanvas li a {
+    font-size: 1.2em;
+  }
+  #showCanvas .offcanvas-footer #btnLogIn {
+    font-size: 0.9em;
+  }
+  #showCanvas .offcanvas-footer .and {
+    font-size: 1em;
+  }
+  #showCanvas .offcanvas-footer #btnSignUp {
+    font-size: 0.9em;
+  }
+}
 @media screen and (max-width: 425px) {
   .Offers .listOffers .row {
     margin-right: 40px;
@@ -1009,6 +1080,32 @@ body {
   .cardBackground .listCard .row .cpu .card .card-body .img-fluid, .cardBackground .listCard .row .gpu .card .card-body .img-fluid {
     height: 270px;
     max-width: 320px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .secondShow .overUnder .img-fluid {
+    height: 408px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .secondShow .overUnder .img-fluid {
+    height: 348px;
+  }
+  .secondShow .otherHelp {
+    font-size: 1.3em;
+  }
+  .secondShow #btnAstuces a {
+    font-size: 1.1em;
+  }
+  .thirdShow .downloadSoftwareOne {
+    margin-bottom: -40px;
+  }
+  .thirdShow .listSoftware .row .col-lg-3 {
+    height: 120px;
+    width: 100px;
+  }
+  .thirdShow .showSoftware .otherSoftware {
+    font-size: 1.6em;
   }
 }
 @font-face {
